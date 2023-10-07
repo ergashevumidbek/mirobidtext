@@ -8,13 +8,13 @@ Talabani ro'yhatga olish
       <div class="row">
         <div class="col-sm-6">
           <h3>
-             Yangilik qo'shish</h3>
+             Yangilik taxrirlash</h3>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html"><i data-feather="home"></i></a></li>
             <li class="breadcrumb-item">Bosh sahifa</li>
-            <li class="breadcrumb-item active">Yangilik qo'shish                           </li>
+            <li class="breadcrumb-item active">Yangilik taxrirlash</li>
           </ol>
         </div>
       </div>
@@ -26,7 +26,8 @@ Talabani ro'yhatga olish
       <div class="col-sm-12">
         <div class="card">
           <div class="card-body">
-           <form action="{{route('mirobidtext_news.store')}}" method="post" enctype="multipart/form-data" >
+           <form action="{{route('mirobidtext_news.update', ['mirobidtext_news'=>$mirobidtext_news->id])}}" method="post" enctype="multipart/form-data" >
+            @method('PUT')
             @csrf
             <div class="form theme-form">
                 <div class="row">
@@ -35,7 +36,7 @@ Talabani ro'yhatga olish
                       <label>Yangilik sarlovha</label>
                       <input class="form-control @error('news_title')
                           is-invlid
-                        @enderror" type="text" name="news_title" placeholder="Yangilik sarlovha *">
+                        @enderror" type="text" name="news_title" placeholder="Yangilik sarlovha *" value="{{$mirobidtext_news->news_title}}">
                         @error('news_title')
                             <div class="text-danger">{{ $message }}</div>
                         @enderror
@@ -47,7 +48,7 @@ Talabani ro'yhatga olish
                     <div class="mb-3">
                       <label>Yangilik haqida qisqacha</label>
                       <input class="form-control @error('news_short_content')  is-invalid
-                      @enderror" type="text" name="news_short_content" placeholder="Qisqa matn">
+                      @enderror" type="text" name="news_short_content" placeholder="Qisqa matn" value="{{$mirobidtext_news->news_short_content}}">
                       @error('news_title')
                       <div class="text-danger">{{ $message }}</div>
                       @enderror
@@ -59,7 +60,7 @@ Talabani ro'yhatga olish
                     <div class="mb-3">
                       <label>Banner rasm</label>
                       <input class="form-control @error('banner_img') is-invalid
-                      @enderror" type="file" name="banner_img" >
+                      @enderror" type="file" name="banner_img" value="{{$mirobidtext_news->banner_img}}">
                       @error('banner_img')
                       <div class="text-danger">{{ $message }}</div>
                       @enderror
@@ -69,7 +70,7 @@ Talabani ro'yhatga olish
                       <div class="mb-3">
                         <label>Kantent rasm-1 (istalgan miqdor)</label>
                         <input class="form-control @error('news_img_1') is-invalid
-                        @enderror"  type="file" name="news_img_1" multiple>
+                        @enderror"  type="file" name="news_img_1" value="{{$mirobidtext_news->news_img_1}}">
                         @error('news_img_1')
                         <div class="text-danger">{{ $message }}</div>
                         @enderror
@@ -79,7 +80,7 @@ Talabani ro'yhatga olish
                       <div class="mb-3">
                         <label>Kantent rasm-2 (istalgan miqdor)</label>
                         <input class="form-control @error('news_img_2') is-invalid
-                        @enderror" type="file" name="news_img_2" multiple>
+                        @enderror" type="file" name="news_img_2" value="{{$mirobidtext_news->news_img_2}}">
                         @error('news_img_2')
                         <div class="text-danger">{{ $message }}</div>
                         @enderror
@@ -94,7 +95,7 @@ Talabani ro'yhatga olish
                         </div>
                         <div class="card-body">
                           <textarea id="editor1" name="main_content" cols="30" rows="10" class="@error('main_content') is-invalid
-                          @enderror">
+                          @enderror" value="{{$mirobidtext_news->main_content}}">
                           </textarea>
                           @error('main_content')
                           <div class="text-danger">{{ $message }}</div>

@@ -27,51 +27,26 @@ Galeriya yaratish
         <div class="card">
           <div class="card-body">
             <div class="form theme-form">
-              <div class="row">
-                <div class="col-4">
-                  <div class="mb-3">
-                    <label>Fan yoki etab</label>
-                    <select class="form-select">
-                      <option>Hourly</option>
-                      <option>Fix price</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div class="mb-3">
-                    <label>Guruh raqami</label>
-                    <select class="form-select">
-                      <option>Hourly</option>
-                      <option>Fix price</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="mb-3">
-                    <label>Talaba</label>
-                    <select class="form-select">
-                      <option>Hourly</option>
-                      <option>Fix price</option>
-                    </select>
-                  </div>
-              </div>
-              <div class="row">
 
-                </div>
-              </div>
               <div class="row">
                 <div class="col-sm-4">
                   <div class="mb-3">
-                    <label>To'plangan ball</label>
-                    <input class="form-control" type="text" placeholder="To'plangan ball">
+                    <label>Galereya rasm nomi</label>
+                    <input class="form-control" type="text" placeholder="Nomi">
                   </div>
                 </div>
                 <div class="col-sm-4">
                   <div class="mb-3">
-                    <label>Imtihon sanasi</label>
-                    <input class="datepicker-here form-control" type="text" data-language="en" placeholder="Imtihon sanasi">
+                    <label>Galereya qisqa matn</label>
+                    <input class=" form-control" type="text"  placeholder="Qisqa matn">
                   </div>
                 </div>
+                <div class="col-sm-4">
+                    <div class="mb-3">
+                      <label>Galereya rasm </label>
+                      <input class=" form-control" type="file"  placeholder="Qisqa matn">
+                    </div>
+                  </div>
               </div>
               <div class="row">
                 <div class="col">

@@ -30,46 +30,25 @@ Avtomobil qo'shish
               <div class="row">
                 <div class="col">
                   <div class="mb-3">
-                    <label>To'lovchi</label>
-                    <input class="form-control" type="text" placeholder="To'lovchi ismi">
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-4">
-                  <div class="mb-3">
-                    <label>Fan</label>
-                    <select class="form-select">
-                      <option>Hourly</option>
-                      <option>Fix price</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="mb-3">
-                    <label>O'qituvchi</label>
-                    <select class="form-select">
-                      <option>Hourly</option>
-                      <option>Fix price</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="mb-3">
-                    <label>Qaysi oy uchun</label>
-                    <input class="datepicker-here form-control" type="text" data-language="en" placeholder="To'lov qilmoqchi bolgan oy">
+                    <label>Mashina rusumi</label>
+                    <input class="form-control" type="text" placeholder="Rusumi">
                   </div>
                 </div>
               </div>
               <div class="row">
 
-                <div class="col">
+                <div class="col-sm-4">
                   <div class="mb-3">
-                    <label>Chegirmalar</label>
-                    <input class=" form-control" type="text" placeholder="Agar mavjud bo'lsa">
+                    <label>Mashina baner rasm</label>
+                    <input class=" form-control" type="file" placeholder="Agar mavjud bo'lsa">
                   </div>
                 </div>
-
+                <div class="col-sm-4">
+                    <div class="mb-3">
+                      <label>Boshqa rasmlar</label>
+                      <input class=" form-control" type="file" placeholder="Agar mavjud bo'lsa">
+                    </div>
+                  </div>
               </div>
 
               <div class="row">

@@ -28,21 +28,24 @@ Yangiliklar
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>Tiger Nixon</td>
-                    <td>System Architect</td>
-                    <td> ddsfvdfs</td>
-                    <td>2011/04/25</td>
-                    <td>$320,800</td>
-                    <td>$320,800</td>
-                    <td>
-                      <ul class="action">
-                        <li class="edit"> <a href="#"><i class="icon-pencil-alt"></i></a></li>
-                        <li class="delete"><a href="#"><i class="icon-trash"></i></a></li>
-                      </ul>
-                    </td>
-                  </tr>
+                    @foreach ($mirobidtext_news as $value)
+                    <tr>
+                        <td>{{$value->id}}</td>
+                        <td>{{$value->news_title}}</td>
+                        <td>{{$value->news_short_content}}</td>
+                        <td> <img src="{{asset('/storage/'.$value->banner_img)}}" style="width: 50px;height:50px;" alt="" class=""></td>
+                        <td><img src="{{asset('/storage/'.$value->news_img_1)}}" style="width: 50px;height:50px;" alt="" class=""></td>
+                        <td><img src="{{asset('/storage/'.$value->news_img_2)}}" style="width: 50px;height:50px;" alt="" class=""></td>
+                        <td>{{$value->created_at}}</td>
+                        <td>
+                          <ul class="action">
+                            <li class="edit"> <a href="{{route('mirobidtext_news.edit', ['mirobidtext_news'=>$value->id])}}"><i class="icon-pencil-alt"></i></a></li>
+                            <li class="delete"><a href="#"><i class="icon-trash"></i></a></li>
+                          </ul>
+                        </td>
+                      </tr>
+                    @endforeach
+
 
                 </tbody>
                 <tfoot>

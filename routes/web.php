@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\LatestNewController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,3 +32,5 @@ Route::get('/add_sertificate', [PageController::class, 'add_sertificate'])->name
 Route::get('/create_subject_materials', [PageController::class, 'create_subject_materials'])->name('create_subject_materials');
 Route::get('/add_gallery', [PageController::class, 'add_gallery'])->name('add_gallery');
 Route::get('/add_avtomobile', [PageController::class, 'add_avtomobile'])->name('add_avtomobile');
+// Resource tables
+Route::resource('mirobidtext_news', LatestNewController::class);

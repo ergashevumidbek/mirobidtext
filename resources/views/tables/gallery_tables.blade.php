@@ -19,12 +19,11 @@ Galeriya
                 <thead>
                   <tr>
                     <th>№</th>
-                    <th>Talab ID</th>
-                    <th>Talaba ism va familya</th>
-                    <th>Fan va etab</th>
-                    <th>Guruh</th>
-                    <th>To'plangan ball</th>
-                    <th>Imtihon sanasi</th>
+                    <th>Galereya nomi</th>
+                    <th>Qisqa matn </th>
+                    <th>Rasm banner</th>
+                    <th>Kantent rasm</th>
+                    <th>Sana</th>
                     <th>Action</th>
                   </tr>
                 </thead>
@@ -36,7 +35,6 @@ Galeriya
                     <td>System Architect</td>
                     <td> dsdsd</td>
                     <td>61</td>
-                    <td>2011/04/25</td>
                     <td>
                       <ul class="action">
                         <li class="edit"> <a href="#"><i class="icon-pencil-alt"></i></a></li>
@@ -49,12 +47,11 @@ Galeriya
                 <tfoot>
                   <tr>
                     <th>№</th>
-                    <th>Talab ID</th>
-                    <th>Talaba ism va familya</th>
-                    <th>Fan va etab</th>
-                    <th>Guruh</th>
-                    <th>To'plangan ball</th>
-                    <th>Imtihon sanasi</th>
+                    <th>Galereya nomi</th>
+                    <th>Qisqa matn </th>
+                    <th>Rasm banner</th>
+                    <th>Kantent rasm</th>
+                    <th>Sana</th>
                     <th>Action</th>
                   </tr>
                 </tfoot>

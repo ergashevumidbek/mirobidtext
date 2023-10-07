@@ -20,14 +20,14 @@
 
 
             <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="{{route('/')}}"><i data-feather="git-pull-request"> </i><span>Boshqaruv</span></a></li>
-            <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="{{route("mirobidtex_news")}}"><i data-feather="users"></i><span>Yangiliklar </span></a></li>
+            <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="{{route("mirobidtext_news.index")}}"><i data-feather="users"></i><span>Yangiliklar </span></a></li>
             <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="{{route("products")}}"><i data-feather="user"></i> </i><span>Mahsulotlar </span></a></li>
             <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="{{route('staffes_table')}}"><i data-feather="monitor"> </i><span>Hodimlar</span></a></li>
             <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="{{route('sertificate')}}"><i data-feather="book"></i><span>Guvohnomalar</span></a></li>
             {{-- <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="{{route('subject_materials_table')}}"><i data-feather="book"></i><span>Fan resurlari</span></a></li> --}}
             <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="{{route('gallery')}}"><i data-feather="monitor"> </i><span>Galeriya</span></a></li>
             {{-- {{-- <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="{{route('benefit_table')}}"><i data-feather="monitor"> </i><span>Kirim-chiqim</span></a></li> --}}
-            <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="{{route('avtomobillar')}}"><i data-feather="activity"></i><span>Avtomobillar</span></a></li>
+            {{-- <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="{{route('avtomobillar')}}"><i data-feather="activity"></i><span>Avtomobillar</span></a></li> --}}
                 {{-- {{--<li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="kanban.html"><i data-feather="monitor"> </i><span>SMS xizmati</span></a></li> --}}
             {{-- <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="kanban.html"><i data-feather="monitor"> </i><span>Talabalar ro'yhati</span></a></li> --}}
 
