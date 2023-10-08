@@ -40,7 +40,16 @@ Yangiliklar
                         <td>
                           <ul class="action">
                             <li class="edit"> <a href="{{route('mirobidtext_news.edit', ['mirobidtext_news'=>$value->id])}}"><i class="icon-pencil-alt"></i></a></li>
-                            <li class="delete"><a href="#"><i class="icon-trash"></i></a></li>
+                            <li class="delete">
+                                <form action="{{route('mirobidtext_news.destroy', ['mirobidtext_news'=>$value->id])}}" method="post"
+                                    onsubmit="return confirm('Rostdan ham o\'chirishni hohlaysizmi')"
+                                    >
+                                    @method("DELETE")
+                                    @csrf
+                                    <button type="submit" class="" style="outline-style: none; border-style:none;"><i class="icon-trash"></i></button>
+                                </form>
+
+                            </li>
                           </ul>
                         </td>
                       </tr>

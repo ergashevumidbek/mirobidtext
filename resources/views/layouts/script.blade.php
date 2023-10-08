@@ -33,7 +33,10 @@
 <script src="{{asset('../assets/js/script.js')}}"></script>
 {{-- <script src="{{asset('../assets/js/theme-customizer/customizer.js')}}">  </script> --}}
 <!-- login js-->
-
+<script src="../assets/js/editor/ckeditor/ckeditor.js"></script>
+    <script src="../assets/js/editor/ckeditor/adapters/jquery.js"></script>
+    <script src="../assets/js/editor/ckeditor/styles.js"></script>
+    <script src="../assets/js/editor/ckeditor/ckeditor.custom.js"></script>
 <script src="../assets/js/datatable/datatables/jquery.dataTables.min.js"></script>
 <script src="../assets/js/datatable/datatable-extension/dataTables.buttons.min.js"></script>
 <script src="../assets/js/datatable/datatable-extension/jszip.min.js"></script>
@@ -54,7 +57,4 @@
 <script src="../assets/js/datatable/datatable-extension/dataTables.rowReorder.min.js"></script>
 <script src="../assets/js/datatable/datatable-extension/dataTables.scroller.min.js"></script>
 <script src="../assets/js/datatable/datatable-extension/custom.js"></script>
-<script src="../assets/js/editor/ckeditor/ckeditor.js"></script>
-    <script src="../assets/js/editor/ckeditor/adapters/jquery.js"></script>
-    <script src="../assets/js/editor/ckeditor/styles.js"></script>
-    <script src="../assets/js/editor/ckeditor/ckeditor.custom.js"></script>
+

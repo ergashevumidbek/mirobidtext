@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\LatestNewController;
+use App\Http\Controllers\MirobidProductController;
+use App\Http\Controllers\MirobidStaffController;
+use App\Http\Controllers\SertificateController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,3 +37,6 @@ Route::get('/add_gallery', [PageController::class, 'add_gallery'])->name('add_ga
 Route::get('/add_avtomobile', [PageController::class, 'add_avtomobile'])->name('add_avtomobile');
 // Resource tables
 Route::resource('mirobidtext_news', LatestNewController::class);
+Route::resource('mirobid_product', MirobidProductController::class);
+Route::resource('mirobid_staff', MirobidStaffController::class);
+Route::resource('sertificate', SertificateController::class);

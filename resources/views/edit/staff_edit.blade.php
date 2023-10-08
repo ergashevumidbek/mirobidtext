@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('title')
-Hodimlar
+Hodimlar taxrirlash
 @endsection
 @section('main_content')
 <div class="container-fluid">
@@ -8,13 +8,13 @@ Hodimlar
       <div class="row">
         <div class="col-sm-6">
           <h3>
-             Hodimlarni ro'yhatga olish</h3>
+             Hodimlarni malumotini taxrirlash</h3>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html"><i data-feather="home"></i></a></li>
             <li class="breadcrumb-item">Bosh sahifa</li>
-            <li class="breadcrumb-item active">Hodimlarni ro'yhatga olish  </li>
+            <li class="breadcrumb-item active">Hodim malumotini taxrirlash  </li>
           </ol>
         </div>
       </div>
@@ -26,14 +26,15 @@ Hodimlar
       <div class="col-sm-12">
         <div class="card">
           <div class="card-body">
-            <form action="{{route('mirobid_staff.store')}}" method="post" enctype="multipart/form-data">
+            <form action="{{route('mirobid_staff.update', ['mirobid_staff'=>$staff_edit_data->id])}}" method="post" enctype="multipart/form-data">
+                @method('PUT')
                 @csrf
                 <div class="form theme-form">
                     <div class="row">
                       <div class="col">
                         <div class="mb-3">
                           <label>Hodim Ism</label>
-                          <input class="form-control" type="text" placeholder="Ism" name="staff_name">
+                          <input class="form-control" type="text" placeholder="Ism" name="staff_name" value="{{$staff_edit_data->staff_name}}">
                         </div>
                       </div>
                     </div>
@@ -41,7 +42,7 @@ Hodimlar
                       <div class="col">
                         <div class="mb-3">
                           <label>Hodim familya</label>
-                          <input class="form-control" type="text" placeholder="Familya" name="staff_surname">
+                          <input class="form-control" type="text" placeholder="Familya" name="staff_surname" value="{{$staff_edit_data->staff_surname}}">
                         </div>
                       </div>
                     </div>
@@ -49,7 +50,7 @@ Hodimlar
                       <div class="col-sm-4">
                         <div class="mb-3">
                           <label>Hodim lavozim</label>
-                          <input class="form-control" type="text" placeholder="Lavozim" name="staff_profission">
+                          <input class="form-control" type="text" placeholder="Lavozim" name="staff_profission" value="{{$staff_edit_data->staff_profission}}">
                         </div>
                       </div>
                       <div class="col-sm-4">
@@ -60,7 +61,7 @@ Hodimlar
                       </div>
 
                             <label>Hodim haqida</label>
-                           <textarea name="staff_bio" id="" cols="150" rows="10"></textarea>
+                           <textarea name="staff_bio" id="" cols="150" rows="10">{{$staff_edit_data->staff_bio}}</textarea>
 
                     </div>
 

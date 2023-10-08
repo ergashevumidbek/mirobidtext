@@ -21,21 +21,36 @@ Guvohnoma va sertifikatlar
                     <th>№</th>
                     <th>Gost nomi</th>
                     <th>Gost rasm</th>
+                    <th>Gost tarif</th>
+                    <th>Sana</th>
                     <th>Taxrirlash</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>61</td>
-                    <td>2011/04/25</td>
-                    <td>$320,800</td>
-                    <td>
-                      <ul class="action">
-                        <li class="edit"> <a href="#"><i class="icon-pencil-alt"></i></a></li>
-                        <li class="delete"><a href="#"><i class="icon-trash"></i></a></li>
-                      </ul>
-                    </td>
-                  </tr>
+                    @foreach ($serti_data as $value)
+                    <tr>
+                        <td>{{$value->id}}</td>
+                        <td>{{$value->gost_name}}</td>
+                        <td><img class="img-fluid table-avtar" src="{{asset('storage/'.$value->gost_banner_img)}}" alt=""></td>
+                        <td>{{$value->gost_label}}</td>
+                        <td>{{$value->created_at}}</td>
+                        <td>
+                          <ul class="action">
+                            <li class="edit"> <a href="{{route('sertificate.edit', ['sertificate'=>$value->id])}}"><i class="icon-pencil-alt"></i></a></li>
+                            <li class="delete">
+                                <form action="{{route('sertificate.destroy', ['sertificate'=>$value->id])}}" method="post"
+                                    onsubmit="return confirm('Rostdan ham o\'chirishni hohlaysizmi')"
+                                    >
+                                    @method("DELETE")
+                                    @csrf
+                                    <button type="submit" class="" style="outline-style: none; border-style:none;"><i class="icon-trash"></i></button>
+                                </form>
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                    @endforeach
+
 
                 </tbody>
                 <tfoot>
@@ -43,6 +58,7 @@ Guvohnoma va sertifikatlar
                     <th>№</th>
                     <th>Gost nomi</th>
                     <th>Gost rasm</th>
+                    <th>Sana</th>
                     <th>Taxrirlash</th>
                   </tr>
                 </tfoot>

@@ -93,7 +93,7 @@ Talabani ro'yhatga olish
                           <h4>Yangilik asosiy qism</h4>
                         </div>
                         <div class="card-body">
-                          <textarea id="editor1" name="main_content" cols="30" rows="10" class="@error('main_content') is-invalid
+                          <textarea id="editor1" name="main_content" cols="180" rows="10" class="@error('main_content') is-invalid
                           @enderror">
                           </textarea>
                           @error('main_content')
@@ -105,7 +105,9 @@ Talabani ro'yhatga olish
 
                 <div class="row">
                   <div class="col">
-                    <div class="text-end"><input type="submit" value="Saqlash" class="btn btn-success me-3"><a class="btn btn-danger" href="{{route('mirobidtext_news.index')}}">Bekor qilish</a></div>
+                    <div class="text-end">
+                        <input type="submit" value="Saqlash" class="btn btn-success me-3">
+                        <a class="btn btn-danger" href="{{route('mirobidtext_news.index')}}">Bekor qilish</a></div>
                   </div>
                 </div>
               </div>
