@@ -13,7 +13,7 @@ class SertificateController extends Controller
     public function index()
     {
         $serti_data = Sertificate::all();
-        return view('tables.sertificate_tables')->with('serti_data',$serti_data);
+        return view('backend.tables.sertificate_tables')->with('serti_data',$serti_data);
     }
 
     /**
@@ -58,7 +58,7 @@ class SertificateController extends Controller
      */
     public function edit(Sertificate $sertificate)
     {
-        return view('edit.serti_edit')->with('sertificate_edit', $sertificate);
+        return view('backend.edit.serti_edit')->with('sertificate_edit', $sertificate);
     }
 
     /**

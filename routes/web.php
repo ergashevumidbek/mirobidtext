@@ -6,6 +6,8 @@ use App\Http\Controllers\LatestNewController;
 use App\Http\Controllers\MirobidProductController;
 use App\Http\Controllers\MirobidStaffController;
 use App\Http\Controllers\SertificateController;
+use App\Http\Controllers\GalleryController;
+use App\Http\Controllers\SlayderContentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,8 +19,9 @@ use App\Http\Controllers\SertificateController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-Route::get('/', [PageController::class, 'dashboard'])->name('/');
+// Backend route
+Route::get('/', [PageController::class, 'main_page'])->name('main_page');
+Route::get('/dashboard', [PageController::class, 'dashboard'])->name('dashboard');
 Route::get('/mirobidtex_news', [PageController::class, 'mirobidtex_news'])->name('mirobidtex_news');
 Route::get('/products', [PageController::class, 'products'])->name('products');
 Route::get('/staffes_table', [PageController::class, 'staffes_table'])->name('staffes_table');
@@ -34,9 +37,13 @@ Route::get('/create_staff', [PageController::class, 'create_staff'])->name('crea
 Route::get('/add_sertificate', [PageController::class, 'add_sertificate'])->name('add_sertificate');
 Route::get('/create_subject_materials', [PageController::class, 'create_subject_materials'])->name('create_subject_materials');
 Route::get('/add_gallery', [PageController::class, 'add_gallery'])->name('add_gallery');
-Route::get('/add_avtomobile', [PageController::class, 'add_avtomobile'])->name('add_avtomobile');
+Route::get('/add_slayder', [PageController::class, 'add_slayder'])->name('add_slayder');
 // Resource tables
 Route::resource('mirobidtext_news', LatestNewController::class);
 Route::resource('mirobid_product', MirobidProductController::class);
 Route::resource('mirobid_staff', MirobidStaffController::class);
 Route::resource('sertificate', SertificateController::class);
+Route::resource('gallery', GalleryController::class);
+Route::resource('slayder_content', SlayderContentController::class);
+//Frontend route
+Route::get('/service', [PageController::class, 'service'])->name('service');

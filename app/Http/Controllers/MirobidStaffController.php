@@ -13,7 +13,7 @@ class MirobidStaffController extends Controller
     public function index()
     {
         $staff_data = MirobidStaff::all();
-        return view('tables.staff_tables')->with(['staff_data'=> $staff_data]);
+        return view('backend.tables.staff_tables', ['staff_datas'=> $staff_data]);
     }
 
     /**
@@ -46,7 +46,7 @@ class MirobidStaffController extends Controller
             'staff_bio'=>$request->staff_bio
         ]);
         $mirobid_staff->save();
-        return view('tables.staff_tables');
+        return redirect()->route('mirobid_staff.index');
     }
 
     /**
@@ -62,7 +62,7 @@ class MirobidStaffController extends Controller
      */
     public function edit(MirobidStaff $mirobidStaff)
     {
-        return view('edit.staff_edit', ['staff_edit_data'=>$mirobidStaff]);
+        return view('backend.edit.staff_edit', ['staff_edit_data'=>$mirobidStaff]);
     }
 
     /**

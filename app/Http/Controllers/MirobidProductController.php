@@ -13,7 +13,7 @@ class MirobidProductController extends Controller
     public function index()
     {
         $pro_data = MirobidProduct::all();
-        return view('tables.product_tables',['pro_data'=>$pro_data]);
+        return view('backend.tables.product_tables',['pro_data'=>$pro_data]);
     }
 
     /**
@@ -22,7 +22,7 @@ class MirobidProductController extends Controller
     public function create()
     {
 
-        return view('tables.product_tables');
+        return view('backend.tables.product_tables');
     }
 
     /**
@@ -67,7 +67,7 @@ class MirobidProductController extends Controller
      */
     public function edit(MirobidProduct $mirobidProduct)
     {
-        return view('edit.product_edit')->with('mirobidProduct', $mirobidProduct);
+        return view('backend.edit.product_edit')->with('mirobidProduct', $mirobidProduct);
     }
 
     /**

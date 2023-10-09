@@ -13,7 +13,7 @@ class LatestNewController extends Controller
     public function index()
     {
         $news_data = LatestNew::all();
-        return view('tables.news_tables')->with('mirobidtext_news', $news_data);
+        return view('backend.tables.news_tables')->with('mirobidtext_news', $news_data);
     }
 
     /**
@@ -22,7 +22,7 @@ class LatestNewController extends Controller
     public function create()
     {
 
-        return view('tables.news_tables');
+        return view('backend.tables.news_tables');
     }
 
     /**
@@ -50,7 +50,7 @@ class LatestNewController extends Controller
             'main_content'=>$request->main_content
         ]);
         $news_data->save();
-        return redirect()->route('mirobidtext_news.index');
+        return redirect()->route('backend.mirobidtext_news.index');
     }
 
     /**
@@ -67,7 +67,7 @@ class LatestNewController extends Controller
     public function edit(LatestNew $mirobidtext_news)
     {
         // dd($mirobidtext_news);
-        return view('edit.news_edit')->with(['mirobidtext_news'=>$mirobidtext_news]);
+        return view('backend.edit.news_edit')->with(['mirobidtext_news'=>$mirobidtext_news]);
     }
 
     /**

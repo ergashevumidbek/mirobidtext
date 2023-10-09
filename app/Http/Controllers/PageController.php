@@ -1,52 +1,71 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\LatestNew;
+use App\Models\MirobidProduct;
+use App\Models\Gallery;
+use App\Models\MirobidStaff;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
+    public function main_page(){
+        return view('frontend.main_page');
+    }
     public function dashboard(){
-        return view('dashboard');
+        $mirobid_news = LatestNew::all()->count();
+        $mirobid_pro = MirobidProduct::all()->count();
+        $gallery = Gallery::all()->count();
+        $staff = MirobidStaff::all()->count();
+        return view('backend.createforms.dashboard')->with([
+            'mirobid_news'=>$mirobid_news,
+            'mirobid_pro'=>$mirobid_pro,
+            'gallery'=>$gallery,
+            'staff'=>$staff
+        ]);
     }
     public function mirobidtex_news(){
-        return view('tables.news_tables');
+        return view('backend.tables.news_tables');
     }
     public function products(){
-        return view('tables.product_tables');
+        return view('backend.tables.product_tables');
     }
     public function staffes_table(){
-        return view('tables.staff_tables');
+        return view('backend.tables.staff_tables');
     }
     public function sertificate(){
-        return view('tables.sertificate_tables');
+        return view('backend.tables.sertificate_tables');
     }
     public function gallery(){
-        return view('tables.gallery_tables');
+        return view('backend.tables.gallery_tables');
     }
     public function avtomobillar(){
-        return view('tables.car_tables');
+        return view('backend.tables.car_tables');
     }
 
     // Create forms all
 
     public function add_news(){
-        return view('createforms.create_news');
+        return view('backend.createforms.create_news');
     }
     public function add_product(){
-        return view('createforms.create_product');
+        return view('backend.createforms.create_product');
     }
-    
+
     public function create_staff(){
-        return view('createforms.create_staff');
+        return view('backend.createforms.create_staff');
     }
     public function add_sertificate(){
-        return view('createforms.create_sertificate');
+        return view('backend.createforms.create_sertificate');
     }
     public function add_gallery(){
-        return view('createforms.create_gallery');
+        return view('backend.createforms.create_gallery');
     }
-    public function add_avtomobile(){
-        return view('createforms.create_cars');
+    public function add_slayder(){
+        return view('backend.createforms.create_subject_materials');
+    }
+// frontend section 
+    public function service(){
+        return view('frontend.service');
     }
 }
