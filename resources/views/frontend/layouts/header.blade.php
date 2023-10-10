@@ -6,7 +6,7 @@
                     <!-- Logo Area Start -->
                     <div class="logo-area">
                         <div class="logo-box">
-                            <a href="index-2.html"> <img src="assets/images/logo/logotip-removebg-preview.png" alt="Logo" style="width: 70px; object-fit: contain;" /></a>
+                            <a href="{{route('/')}}"> <img src="assets/images/logo/logotip-removebg-preview.png" alt="Logo" style="width: 70px; object-fit: contain;" /></a>
                         </div>
                     </div>
                     <!-- Logo Area End -->
@@ -45,34 +45,25 @@
                             <div class="tj-main-menu d-lg-block d-none text-end" id="main-menu">
                                 <ul class="main-menu">
                                     <li class="active current-menu-item">
-                                        <a class="active" href="index.html">Bosh sahifa</a>
+                                        <a class="active" href="{{route('/')}}">Bosh sahifa</a>
                                     </li>
-
-                                    <li>
-                                        <a href="service-details.html"> Yetkazib berish</a>
+                                    <li class="active current-menu-item">
+                                        <a class="" href="{{route('yangiliklar')}}">Yangiliklar</a>
                                     </li>
-                                    <li class="menu-item-has-children">
-                                        <a href="#"> Maxsulotlar</a>
-                                        <ul class="list-gap sub-menu-list">
-                                            <li><a href="project.html">Project</a></li>
-                                            <li><a href="project-details.html">Project Details</a></li>
-                                            <li><a href="team.html"> Team</a></li>
-                                            <li><a href="team-details.html"> Team Details</a></li>
-                                            <li><a href="faq.html"> Faq</a></li>
-                                        </ul>
+                                    
+                                    <li class=" current-menu-item">
+                                        <a href="{{route('mahsulotlar')}}"> Maxsulotlar</a>
                                     </li>
-                                    <li class="menu-item-has-children">
-                                        <a href="#"> Guvohnomalar</a>
-                                        <ul class="list-gap sub-menu-list">
-                                            <li><a href="blog.html">Blog Grid</a></li>
-                                            <li><a href="blog-standard.html">Blog Standard</a></li>
-                                            <li><a href="blog-details.html">Blog Details</a></li>
-                                        </ul>
+                                    <li class="current-menu-item">
+                                        <a href="{{route('guvohnoma')}}"> Guvohnomalar</a>
+                                    </li>
+                                    <li class=" current-menu-item">
+                                        <a href="{{route('yetkazib_berish')}}"> Yetkazib berish</a>
                                     </li>
                                     <li>
-                                        <a href="about.html"> Biz haqimizda</a>
+                                        <a href="{{route('biz_haqimizda')}}"> Biz haqimizda</a>
                                     </li>
-                                    <li><a href="contact.html">Aloqa</a></li>
+                                    <li><a href="{{route('aloqa')}}">Aloqa</a></li>
                                 </ul>
                             </div>
                             <!-- Mainmenu Item End -->

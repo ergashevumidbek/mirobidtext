@@ -273,7 +273,7 @@ textarea:focus {
 .tj-header-section.header-sticky {
     position: fixed;
     width: 100%;
-    background: var(--tj-white-color);
+    background: #062e39;
     top: 0;
     box-shadow: 0px 7px 18px rgba(24, 16, 16, 0.0509803922);
     -webkit-animation: sticky 0.7s;

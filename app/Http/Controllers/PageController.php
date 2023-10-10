@@ -64,8 +64,23 @@ class PageController extends Controller
     public function add_slayder(){
         return view('backend.createforms.create_subject_materials');
     }
-// frontend section 
-    public function service(){
+// frontend section
+    public function yetkazib_berish(){
         return view('frontend.service');
+    }
+    public function yangiliklar(){
+        return view('frontend.news');
+    }
+    public function biz_haqimizda(){
+        return view('frontend.about_us');
+    }
+    public function aloqa(){
+        return view('frontend.contact');
+    }
+    public function mahsulotlar(){
+        return view('frontend.product');
+    }
+    public function guvohnoma(){
+        return view('frontend.sertificate');
     }
 }

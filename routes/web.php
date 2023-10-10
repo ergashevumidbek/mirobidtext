@@ -9,18 +9,8 @@ use App\Http\Controllers\SertificateController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\SlayderContentController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
 // Backend route
-Route::get('/', [PageController::class, 'main_page'])->name('main_page');
+Route::get('/', [PageController::class, 'main_page'])->name('/');
 Route::get('/dashboard', [PageController::class, 'dashboard'])->name('dashboard');
 Route::get('/mirobidtex_news', [PageController::class, 'mirobidtex_news'])->name('mirobidtex_news');
 Route::get('/products', [PageController::class, 'products'])->name('products');
@@ -46,4 +36,9 @@ Route::resource('sertificate', SertificateController::class);
 Route::resource('gallery', GalleryController::class);
 Route::resource('slayder_content', SlayderContentController::class);
 //Frontend route
-Route::get('/service', [PageController::class, 'service'])->name('service');
+Route::get('/yangiliklar', [PageController::class, 'yangiliklar'])->name('yangiliklar');
+Route::get('/biz_haqimizda', [PageController::class,'biz_haqimizda'])->name('biz_haqimizda');
+Route::get('/aloqa', [PageController::class, 'aloqa'])->name('aloqa');
+Route::get('/mahsulotlar', [PageController::class, 'mahsulotlar'])->name('mahsulotlar');
+Route::get('/guvohnoma', [PageController::class, 'guvohnoma'])->name('guvohnoma');
+Route::get('/yetkazib_berish', [PageController::class, 'yetkazib_berish'])->name('yetkazib_berish');

@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumb-content">
-                        <h1 class="breadcrumb-title text-center">Yetkazib berish</h1>
+                        <h1 class="breadcrumb-title text-center">Yangiliklar detail</h1>
                     </div>
                 </div>
             </div>

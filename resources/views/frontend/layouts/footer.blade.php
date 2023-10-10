@@ -107,27 +107,4 @@
             </div>
         </div>
     </div>
-    <div class="copyright-bottom">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="footer-copyright-area">
-                        <div class="copyright-target">
-                            <p>
-                                Copyright © 2023 <a href="#" target="_blank"> ThemeJunction. </a> All Rights
-                                Reserved.
-                            </p>
-                        </div>
-                        <div class="copyright-menu">
-                            <ul class="list-gap">
-                                <li><a href="#"> Setting & privacy</a></li>
-                                <li><a href="#"> Faqs</a></li>
-                                <li><a href="#"> Support</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </footer>

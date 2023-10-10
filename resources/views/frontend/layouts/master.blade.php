@@ -9,9 +9,9 @@
         <!-- Preloader end -->
         @include('frontend.layouts.loader')
         <!-- Offcanvas Area Start-->
-        
-        <!-- Offcanvas Area End-->
 
+        <!-- Offcanvas Area End-->
+        @include('frontend.layouts.mobile_canvas')
         <!--========== Header Section Start ==============-->
             @include('frontend.layouts.header')
         <!--========== Header Section End ==============-->

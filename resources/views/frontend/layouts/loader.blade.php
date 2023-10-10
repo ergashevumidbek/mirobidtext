@@ -18,5 +18,4 @@
             <span data-text-preloader="X" class="letters-loading"> X </span>
         </div>
     </div>
-    <button class="tj-primary-btn">Cancel Preloader</button>
 </div>
