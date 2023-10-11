@@ -11,6 +11,7 @@ use App\Http\Controllers\SlayderContentController;
 
 // Backend route
 Route::get('/', [PageController::class, 'main_page'])->name('/');
+Route::get('/login', [PageController::class, 'login'])->name('login');
 Route::get('/dashboard', [PageController::class, 'dashboard'])->name('dashboard');
 Route::get('/mirobidtex_news', [PageController::class, 'mirobidtex_news'])->name('mirobidtex_news');
 Route::get('/products', [PageController::class, 'products'])->name('products');

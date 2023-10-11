@@ -50,7 +50,7 @@
                                     <li class="active current-menu-item">
                                         <a class="" href="{{route('yangiliklar')}}">Yangiliklar</a>
                                     </li>
-                                    
+
                                     <li class=" current-menu-item">
                                         <a href="{{route('mahsulotlar')}}"> Maxsulotlar</a>
                                     </li>
@@ -70,7 +70,7 @@
 
                             <div class="header-menu-select d-flex align-items-center justify-content-end">
                                 <div class="tj-header-button d-none d-lg-block">
-                                    <a class="tj-header-btn" href="contact.html">
+                                    <a class="tj-header-btn" href="{{route('login')}}">
                                         Kirish <i class="flaticon-right-1"></i>
                                     </a>
                                 </div>

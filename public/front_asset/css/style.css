@@ -241,6 +241,7 @@ textarea:focus {
     01. Header CSS
  ------------------------------------ */
 .tj-header-section {
+    background-color: #062e39;
     position: absolute;
     top: 0;
     left: 0;

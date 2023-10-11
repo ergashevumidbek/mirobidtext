@@ -83,4 +83,7 @@ class PageController extends Controller
     public function guvohnoma(){
         return view('frontend.sertificate');
     }
+    public function login(){
+        return view('auth.login');
+    }
 }
