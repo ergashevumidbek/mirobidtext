@@ -40,7 +40,7 @@
                 <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="300">
                     <div class="tj-team-item">
                         <div class="image-box">
-                            <img src="assets/images/team/team-1.jpg" alt="Image" />
+                            <img src="front_asset/images/team/team-1.jpg" alt="Image" />
                             <div class="social-icon-box">
                                 <ul class="social-icon">
                                     <li>
@@ -67,7 +67,7 @@
                 <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="400">
                     <div class="tj-team-item">
                         <div class="image-box">
-                            <img src="assets/images/team/team-2.jpg" alt="Image" />
+                            <img src="front_asset/images/team/team-2.jpg" alt="Image" />
                             <div class="social-icon-box">
                                 <ul class="social-icon">
                                     <li>
@@ -94,7 +94,7 @@
                 <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="500">
                     <div class="tj-team-item">
                         <div class="image-box">
-                            <img src="assets/images/team/team-3.jpg" alt="Image" />
+                            <img src="front_asset/images/team/team-3.jpg" alt="Image" />
                             <div class="social-icon-box">
                                 <ul class="social-icon">
                                     <li>
@@ -121,7 +121,7 @@
                 <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="600">
                     <div class="tj-team-item">
                         <div class="image-box">
-                            <img src="assets/images/team/team-8.jpg" alt="Image" />
+                            <img src="front_asset/images/team/team-8.jpg" alt="Image" />
                             <div class="social-icon-box">
                                 <ul class="social-icon">
                                     <li>
@@ -148,7 +148,7 @@
                 <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="700">
                     <div class="tj-team-item">
                         <div class="image-box">
-                            <img src="assets/images/team/team-9.jpg" alt="Image" />
+                            <img src="front_asset/images/team/team-9.jpg" alt="Image" />
                             <div class="social-icon-box">
                                 <ul class="social-icon">
                                     <li>
@@ -175,7 +175,7 @@
                 <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="800">
                     <div class="tj-team-item">
                         <div class="image-box">
-                            <img src="assets/images/team/team-10.jpg" alt="Image" />
+                            <img src="front_asset/images/team/team-10.jpg" alt="Image" />
                             <div class="social-icon-box">
                                 <ul class="social-icon">
                                     <li>
