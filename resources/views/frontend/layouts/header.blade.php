@@ -1,8 +1,8 @@
 <header class="tj-header-section" id="header-sticky">
     <div class="container">
-        <div class="row">
+        <div class="row"  style="margin-bottom: 5px;">
             <div class="col-lg-12">
-                <div class="bg-color d-flex flex-wrap">
+                <div class="bg-color d-flex flex-wrap" >
                     <!-- Logo Area Start -->
                     <div class="logo-area">
                         <div class="logo-box">
