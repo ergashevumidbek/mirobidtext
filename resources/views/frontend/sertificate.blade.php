@@ -22,22 +22,6 @@
                     <div class="tj-team-item">
                         <div class="image-box">
                             <img src="front_asset/images/team/team-1.jpg" alt="Image" />
-                            <div class="social-icon-box">
-                                <ul class="social-icon">
-                                    <li>
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
                         </div>
                         <div class="team-content text-center">
                             <h4><a class="title-link" href="team-details.html">Kevin Martin</a></h4>
@@ -48,23 +32,7 @@
                 <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="400">
                     <div class="tj-team-item">
                         <div class="image-box">
-                            <img src="front_asset/images/team/team-2.jpg" alt="Image" />
-                            <div class="social-icon-box">
-                                <ul class="social-icon">
-                                    <li>
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
+                            <img src="front_asset/images/team/team-1.jpg" alt="Image" />
                         </div>
                         <div class="team-content text-center">
                             <h4><a class="title-link" href="team-details.html">David Cooper</a></h4>
@@ -76,22 +44,6 @@
                     <div class="tj-team-item">
                         <div class="image-box">
                             <img src="front_asset/images/team/team-3.jpg" alt="Image" />
-                            <div class="social-icon-box">
-                                <ul class="social-icon">
-                                    <li>
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
                         </div>
                         <div class="team-content text-center">
                             <h4><a class="title-link" href="team-details.html">Kevin Martin</a></h4>
@@ -103,22 +55,6 @@
                     <div class="tj-team-item">
                         <div class="image-box">
                             <img src="front_asset/images/team/team-8.jpg" alt="Image" />
-                            <div class="social-icon-box">
-                                <ul class="social-icon">
-                                    <li>
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
                         </div>
                         <div class="team-content text-center">
                             <h4><a class="title-link" href="team-details.html">Kevin Martin</a></h4>
@@ -130,22 +66,6 @@
                     <div class="tj-team-item">
                         <div class="image-box">
                             <img src="front_asset/images/team/team-9.jpg" alt="Image" />
-                            <div class="social-icon-box">
-                                <ul class="social-icon">
-                                    <li>
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
                         </div>
                         <div class="team-content text-center">
                             <h4><a class="title-link" href="team-details.html">David Cooper</a></h4>
@@ -157,22 +77,6 @@
                     <div class="tj-team-item">
                         <div class="image-box">
                             <img src="front_asset/images/team/team-10.jpg" alt="Image" />
-                            <div class="social-icon-box">
-                                <ul class="social-icon">
-                                    <li>
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
                         </div>
                         <div class="team-content text-center">
                             <h4><a class="title-link" href="team-details.html">Kevin Martin</a></h4>
@@ -182,7 +86,7 @@
                 </div>
                 <div class="tj-theme-btn text-center">
                     <a class="tj-primary-btn" href="team-details.html">
-                        Load More <i class="flaticon-right-1"></i>
+                        Batafsil <i class="flaticon-right-1"></i>
                     </a>
                 </div>
             </div>

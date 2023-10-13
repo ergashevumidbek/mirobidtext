@@ -1,7 +1,7 @@
 @extends('frontend.layouts.master')
 @section('main_content')
    <!--========== breadcrumb Start ==============-->
-   <section >
+   <section style="margin-bottom: 60px">
    
    </section>
 <!--========== breadcrumb End ==============-->
@@ -24,9 +24,6 @@
                         <img src="front_asset/images/service/service-8.jpg" alt="Image" />
                     </div>
                     <div class="service-content">
-                        <div class="service-icon">
-                            <i class="flaticon-air-freight"></i>
-                        </div>
                         <h4><a class="title" href="service-details.html"> Air Freight Service</a></h4>
                         <p>Long established fact that reader will be distracted by the</p>
                     </div>
@@ -38,9 +35,6 @@
                         <img src="front_asset/images/service/service-9.jpg" alt="Image" />
                     </div>
                     <div class="service-content">
-                        <div class="service-icon">
-                            <i class="flaticon-cargo-ship-1"></i>
-                        </div>
                         <h4><a class="title" href="service-details.html"> Ocean Freight</a></h4>
                         <p>Long established fact that reader will be distracted by the</p>
                     </div>
@@ -52,9 +46,6 @@
                         <img src="front_asset/images/service/service-10.jpg" alt="Image" />
                     </div>
                     <div class="service-content">
-                        <div class="service-icon">
-                            <i class="flaticon-delivery-van"></i>
-                        </div>
                         <h4><a class="title" href="service-details.html"> Road Transport</a></h4>
                         <p>Long established fact that reader will be distracted by the</p>
                     </div>
@@ -66,9 +57,6 @@
                         <img src="front_asset/images/service/service-16.jpg" alt="Image" />
                     </div>
                     <div class="service-content">
-                        <div class="service-icon">
-                            <i class="flaticon-air-freight"></i>
-                        </div>
                         <h4><a class="title" href="service-details.html"> Third Party Logistics</a></h4>
                         <p>Long established fact that reader will be distracted by the</p>
                     </div>
@@ -80,9 +68,6 @@
                         <img src="front_asset/images/service/service-17.jpg" alt="Image" />
                     </div>
                     <div class="service-content">
-                        <div class="service-icon">
-                            <i class="flaticon-cargo-ship-1"></i>
-                        </div>
                         <h4><a class="title" href="service-details.html"> Distribution Center</a></h4>
                         <p>Long established fact that reader will be distracted by the</p>
                     </div>
@@ -94,9 +79,6 @@
                         <img src="front_asset/images/service/service-18.jpg" alt="Image" />
                     </div>
                     <div class="service-content">
-                        <div class="service-icon">
-                            <i class="flaticon-delivery-van"></i>
-                        </div>
                         <h4><a class="title" href="service-details.html"> Train Transportation</a></h4>
                         <p>Long established fact that reader will be distracted by the</p>
                     </div>

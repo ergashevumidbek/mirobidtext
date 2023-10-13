@@ -58,7 +58,7 @@
                                         <a href="{{route('guvohnoma')}}"> Guvohnomalar</a>
                                     </li>
                                     <li class=" current-menu-item">
-                                        <a href="{{route('yetkazib_berish')}}"> Yetkazib berish</a>
+                                        <a href="{{route('yetkazib_berish')}}"> Yetkazib berish </a>
                                     </li>
                                     <li>
                                         <a href="{{route('biz_haqimizda')}}"> Biz haqimizda</a>

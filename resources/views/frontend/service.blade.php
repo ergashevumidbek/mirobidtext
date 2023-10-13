@@ -1,16 +1,8 @@
 @extends('frontend.layouts.master')
 @section('main_content')
     <!--========== breadcrumb Start ==============-->
-    <section class="breadcrumb-wrapper" data-bg-image="assets/images/slider/slider-1.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumb-content">
-                        <h1 class="breadcrumb-title text-center">Yetkazib berish</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section style="margin-bottom: 60px">
+        
     </section>
 <!--========== breadcrumb End ==============-->
 
@@ -23,7 +15,7 @@
                     <div class="tj-blog-item-three">
                         <div class="tj-blog-image">
                             <a href="service-details.html">
-                                <img src="assets/images/service/service-11.jpg" alt="Blog"
+                                <img src="front_asset/images/service/service-11.jpg" alt="Blog"
                             /></a>
                         </div>
                         <div class="blog-content-area">
@@ -45,7 +37,7 @@
                     <div class="row align-items-center">
                         <div class="col-lg-5 col-md-6">
                             <div class="check-image">
-                                <img src="assets/images/blog/blog-12.jpg" alt="Blog" />
+                                <img src="front_asset/images/blog/blog-12.jpg" alt="Blog" />
                             </div>
                         </div>
                         <div class="col-lg-7 col-md-6">
