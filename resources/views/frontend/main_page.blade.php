@@ -2,10 +2,10 @@
 @section('main_content')
      <!--=========== Slider Section Start =========-->
      <section class="tj-slider-section">
-        <div class="slider_shape"><img src="assets/images/banner/shape-1.png" alt="Image" /></div>
+        <div class="slider_shape"><img src="front_asset/images/banner/shape-1.png" alt="Image" /></div>
         <div class="swiper sc-slider-1">
             <div class="swiper-wrapper">
-                <div class="swiper-slide" data-bg-image="assets/images/slider/slider-2.jpg">
+                <div class="swiper-slide" data-bg-image="front_asset/images/slider/slider-2.jpg">
                     <div class="container">
                         <div class="slider-content p-z-idex">
                             <h1 class="slider-title">Flexible Transport And Logistics Services</h1>
@@ -22,7 +22,7 @@
                     </div>
                     <div class="banner-shape"></div>
                 </div>
-                <div class="swiper-slide" data-bg-image="assets/images/slider/slider-1.jpg">
+                <div class="swiper-slide" data-bg-image="front_asset/images/slider/slider-1.jpg">
                     <div class="container">
                         <div class="slider-content p-z-idex">
                             <h1 class="slider-title">Flexible Transport And Logistics Services</h1>
@@ -39,7 +39,7 @@
                     </div>
                     <div class="banner-shape"></div>
                 </div>
-                <div class="swiper-slide" data-bg-image="assets/images/slider/slider-2.jpg">
+                <div class="swiper-slide" data-bg-image="front_asset/images/slider/slider-2.jpg">
                     <div class="container">
                         <div class="slider-content p-z-idex">
                             <h1 class="slider-title">Flexible Transport And Logistics Services</h1>
@@ -75,7 +75,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="100">
-                    <div class="tj-service-item" data-bg-image="assets/images/service/service-1.jpg">
+                    <div class="tj-service-item" data-bg-image="front_asset/images/service/service-1.jpg">
 
                         <div class="service-content">
                             <h4><a class="title-link" href="service-details.html"> Air Freight Service</a></h4>
@@ -84,7 +84,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="200">
-                    <div class="tj-service-item" data-bg-image="assets/images/service/service-2.jpg">
+                    <div class="tj-service-item" data-bg-image="front_asset/images/service/service-2.jpg">
 
                         <div class="service-content">
                             <h4>
@@ -95,7 +95,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="300">
-                    <div class="tj-service-item" data-bg-image="assets/images/service/service-3.jpg">
+                    <div class="tj-service-item" data-bg-image="front_asset/images/service/service-3.jpg">
 
                         <div class="service-content">
                             <h4><a class="title-link" href="service-details.html"> Road Transport</a></h4>
@@ -110,14 +110,14 @@
 
     <!--=========== Cta Section Start =========-->
     <section class="tj-cta-section icon-animate">
-        <div class="cta-inner" data-bg-image="assets/images/slider/slider-2.jpg"></div>
+        <div class="cta-inner" data-bg-image="front_asset/images/slider/slider-2.jpg"></div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <div class="cta-content-area">
                         <div class="cta-content">
                             <div class="cta-icon">
-                                <img style="width: 100px; object-fit: contain;" src="./assets/images/logo/logotip-removebg-preview.png" alt="">
+                                <img style="width: 100px; object-fit: contain;" src="front_asset/images/logo/logotip-removebg-preview.png" alt="">
                             </div>
                             <div class="cta-text">
                                 <h3 class="title">MChJ "Mirobid Textile"</h3>
@@ -159,7 +159,7 @@
                         <div class="tj-icon-box">
                             <div class="ab-text d-flex align-items-center">
                                 <div class="ab-icon">
-                                    <img src="assets/images/icon/global.svg" alt="Icon" />
+                                    <img src="front_asset/images/icon/global.svg" alt="Icon" />
                                 </div>
                                 <div class="ab-title">
                                     <h5 class="title">Butun Osiyo bo'ylab</h5>
@@ -173,7 +173,7 @@
                         <div class="tj-icon-box">
                             <div class="ab-text d-flex align-items-center">
                                 <div class="ab-icon">
-                                    <img src="assets/images/icon/winner.svg" alt="Icon" />
+                                    <img src="front_asset/images/icon/winner.svg" alt="Icon" />
                                 </div>
                                 <div class="ab-title">
                                     <h5 class="title">Guvohnoma va mukofotlar</h5>
@@ -205,10 +205,10 @@
                             </div>
                         </div>
                         <div class="image-box">
-                            <img class="p-z-idex" src="assets/images/about/ab-1.jpg" alt="Image" />
+                            <img class="p-z-idex" src="front_asset/images/about/ab-1.jpg" alt="Image" />
                         </div>
-                        <img class="group-1 p-z-idex" src="assets/images/about/ab-2.jpg" alt="Image" />
-                        <img class="group-shape" src="assets/images/about/ab-shape.png" alt="Image" />
+                        <img class="group-1 p-z-idex" src="front_asset/images/about/ab-2.jpg" alt="Image" />
+                        <img class="group-shape" src="front_asset/images/about/ab-shape.png" alt="Image" />
                     </div>
                 </div>
             </div>
@@ -253,7 +253,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6" data-sal="slide-right" data-sal-duration="800">
-                    <div class="tj-map-tabs" data-bg-image="assets/images/banner/form-shape2.png">
+                    <div class="tj-map-tabs" data-bg-image="front_asset/images/banner/form-shape2.png">
                         <div class="accordion" id="accordionExample">
                             <div class="accordion-item">
                                 <h4 class="accordion-header" id="headingOne">
@@ -325,7 +325,7 @@
                 <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="300">
                     <div class="tj-blog-item">
                         <div class="tj-blog-image">
-                            <a href="blog-details.html"> <img src="assets/images/blog/blog-1.jpg" alt="Blog" /></a>
+                            <a href="blog-details.html"> <img src="front_asset/images/blog/blog-1.jpg" alt="Blog" /></a>
                         </div>
                         <div class="blog-content-area">
 
@@ -357,7 +357,7 @@
                 <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="400">
                     <div class="tj-blog-item">
                         <div class="tj-blog-image">
-                            <a href="blog-details.html"> <img src="assets/images/blog/blog-2.jpg" alt="Blog" /></a>
+                            <a href="blog-details.html"> <img src="front_asset/images/blog/blog-2.jpg" alt="Blog" /></a>
                         </div>
                         <div class="blog-content-area">
 
@@ -389,7 +389,7 @@
                 <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="500">
                     <div class="tj-blog-item">
                         <div class="tj-blog-image">
-                            <a href="blog-details.html"> <img src="assets/images/blog/blog-3.jpg" alt="Blog" /></a>
+                            <a href="blog-details.html"> <img src="front_asset/images/blog/blog-3.jpg" alt="Blog" /></a>
                         </div>
                         <div class="blog-content-area">
 
