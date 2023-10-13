@@ -1,7 +1,7 @@
 @extends('frontend.layouts.master')
 @section('main_content')
    <!--========== breadcrumb Start ==============-->
-   <section >
+   <section style="margin-bottom: 60px">
    
    </section>
 <!--========== breadcrumb End ==============-->

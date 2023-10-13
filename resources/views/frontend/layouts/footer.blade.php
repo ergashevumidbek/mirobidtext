@@ -28,28 +28,20 @@
             <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6">
                 <div class="footer-widget footer1_col_2 widget_nav_menu">
                     <div class="footer-title">
-                        <h5 class="title">Our Services</h5>
+                        <h5 class="title">Hizmatlarimiz</h5>
                     </div>
                     <div class="widget-menu">
                         <ul>
                             <li>
-                                <a href="#"> <i class="flaticon-plus"></i> Warehouse Air</a>
+                                <a href="{{route('mahsulotlar')}}">Turli xildagi mahsulotlar</a>
                             </li>
                             <li>
-                                <a href="#"> <i class="flaticon-plus"></i> Freight Ocean</a>
+                                <a href="{{route('yetkazib_berish')}}">Yetkazib berish hizmati</a>
                             </li>
                             <li>
-                                <a href="#"> <i class="flaticon-plus"></i> freight Road </a>
+                                <a href="#">To'lovlar har qanday usulda </a>
                             </li>
-                            <li>
-                                <a href="#"> <i class="flaticon-plus"></i> Freight Freight</a>
-                            </li>
-                            <li>
-                                <a href="#"> <i class="flaticon-plus"></i> Supply Chain </a>
-                            </li>
-                            <li>
-                                <a href="#"> <i class="flaticon-plus"></i> Packaginga</a>
-                            </li>
+                            
                         </ul>
                     </div>
                 </div>
@@ -57,27 +49,27 @@
             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                 <div class="footer-widget footer1_col_3 widget_nav_menu">
                     <div class="footer-title">
-                        <h5 class="title">Useful Links</h5>
+                        <h5 class="title">Foydali havolalar</h5>
                     </div>
                     <div class="widget-menu">
                         <ul>
                             <li>
-                                <a href="#"> <i class="flaticon-plus"></i> News & Media </a>
+                                <a href="{{route('/')}}">Bosh sahifa</a>
                             </li>
                             <li>
-                                <a href="#"> <i class="flaticon-plus"></i> Sustainability</a>
+                                <a href="{{route('yangiliklar')}}">Yangiliklar</a>
                             </li>
+                            
                             <li>
-                                <a href="#"> <i class="flaticon-plus"></i> About Expertise </a>
+                                <a href="{{route('guvohnoma')}}"> Guvohnomalar</a>
                             </li>
+            
                             <li>
-                                <a href="#"> <i class="flaticon-plus"></i> Case Studies</a>
+                                <a href="{{route('biz_haqimizda')}}"> Biz haqimizda</a>
                             </li>
+
                             <li>
-                                <a href="#"> <i class="flaticon-plus"></i> Our Team </a>
-                            </li>
-                            <li>
-                                <a href="#"> <i class="flaticon-plus"></i> Contacts</a>
+                                <a href="{{route('aloqa')}}">Aloqa</a>
                             </li>
                         </ul>
                     </div>
@@ -86,19 +78,19 @@
             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                 <div class="footer-widget footer1_col_4 footer-contact-info">
                     <div class="footer-title">
-                        <h5 class="title">Contact Info</h5>
+                        <h5 class="title">Bog'lanish</h5>
                     </div>
                     <div class="widget-contact">
-                        <div class="contact-list">
+                        <div class="contact-list" style="width: 600px">
                             <ul class="list-gap">
-                                <li><i class="flaticon-placeholder"></i> 244, First Floor, Angeles</li>
+                                <li><i class="flaticon-placeholder"></i>  O'zbekiston Respublikasi, Namangan viloyati, Namangan shahri, Polikovskaya ko'chasi 42-uy</li>
                                 <li>
                                     <i class="flaticon-phone-call"></i>
-                                    <a href="tel:(880)1247536548"> (880)1247536548</a>
+                                    <a href="tel:(880)1247536548"> +998-90-275-0007</a>
                                 </li>
                                 <li>
                                     <i class="flaticon-email-2"></i>
-                                    <a href="mailto:info@example.com"> info@example.com</a>
+                                    <a href="mailto:info@example.com"> mirobid.tex@mail.ru</a>
                                 </li>
                             </ul>
                         </div>

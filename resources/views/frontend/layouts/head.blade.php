@@ -1,14 +1,14 @@
 <head>
     <!-- Meta Tag -->
     <meta charset="utf-8" />
-    <title>LogiLand - Transport & Logistics Service HTML Template</title>
+    <title>MIROBID tekistil</title>
     <meta name="description" content="" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" href="front_asset/images/fav.svg" />
-    <link rel="shortcut icon" type="image/x-icon" href="front_asset/images/fav.svg" />
+    <link rel="apple-touch-icon" href="front_asset/images/logo/logotip-removebg-preview.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="front_asset/images/logo/logotip-removebg-preview.png" />
 
     <!-- Bootstrap  v5.1.3 css -->
     <link rel="stylesheet" href="front_asset/css/bootstrap.min.css" />

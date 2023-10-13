@@ -1,27 +1,8 @@
 @extends('frontend.layouts.master')
 @section('main_content')
       <!--========== breadcrumb Start ==============-->
-      <section class="breadcrumb-wrapper" data-bg-image="assets/images/banner/breadcrumb.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumb-content">
-                        <h1 class="breadcrumb-title text-center">Biz bilan aloqa</h1>
-                        <div class="breadcrumb-link">
-                            <span>
-                                <a href="index-2.html">
-                                    <span>Home</span>
-                                </a>
-                            </span>
-                            >
-                            <span>
-                                <span> Contact</span>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <section style="margin-bottom: 60px">
+       
     </section>
     <!--========== breadcrumb End ==============-->
 
