@@ -2,27 +2,8 @@
 @section('main_content')
 
         <!--========== breadcrumb Start ==============-->
-        <section class="breadcrumb-wrapper" data-bg-image="assets/images/banner/breadcrumb.jpg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="breadcrumb-content">
-                            <h1 class="breadcrumb-title text-center">About Us</h1>
-                            <div class="breadcrumb-link">
-                                <span>
-                                    <a href="index-2.html">
-                                        <span>Home</span>
-                                    </a>
-                                </span>
-                                >
-                                <span>
-                                    <span> About</span>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <section style="margin-bottom: 60px">
+           
         </section>
         <!--========== breadcrumb End ==============-->
 
@@ -44,7 +25,7 @@
                             <div class="tj-icon-box">
                                 <div class="ab-text d-flex align-items-center">
                                     <div class="ab-icon">
-                                        <img src="assets/images/icon/global.svg" alt="Icon" />
+                                        <img src="front_asset/images/icon/global.svg" alt="Icon" />
                                     </div>
                                     <div class="ab-title">
                                         <h5 class="title">Worldwide Service</h5>
@@ -58,7 +39,7 @@
                             <div class="tj-icon-box">
                                 <div class="ab-text d-flex align-items-center">
                                     <div class="ab-icon">
-                                        <img src="assets/images/icon/winner.svg" alt="Icon" />
+                                        <img src="front_asset/images/icon/winner.svg" alt="Icon" />
                                     </div>
                                     <div class="ab-title">
                                         <h5 class="title">Certified & Awward Winner</h5>
@@ -76,7 +57,7 @@
                                     </a>
                                 </div>
                                 <div class="right-text">
-                                    <img src="assets/images/icon/auother.svg" alt="Image" />
+                                    <img src="front_asset/images/icon/auother.svg" alt="Image" />
                                 </div>
                             </div>
                         </div>
@@ -93,10 +74,10 @@
                                 </div>
                             </div>
                             <div class="image-box">
-                                <img class="p-z-idex" src="assets/images/about/ab-1.jpg" alt="Image" />
+                                <img class="p-z-idex" src="front_asset/images/about/ab-1.jpg" alt="Image" />
                             </div>
-                            <img class="group-1 p-z-idex" src="assets/images/about/ab-2.jpg" alt="Image" />
-                            <img class="group-shape" src="assets/images/about/ab-shape.png" alt="Image" />
+                            <img class="group-1 p-z-idex" src="front_asset/images/about/ab-2.jpg" alt="Image" />
+                            <img class="group-shape" src="front_asset/images/about/ab-shape.png" alt="Image" />
                         </div>
                     </div>
                 </div>
