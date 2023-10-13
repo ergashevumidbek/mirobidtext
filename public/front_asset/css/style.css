@@ -8696,7 +8696,7 @@ PAGE LOAD ANIMATION
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    background: var(--tj-primary-color2);
+    background: #ffffff;
 }
 
 .preloader .tj-primary-btn {
