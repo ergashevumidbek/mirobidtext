@@ -6,7 +6,7 @@ use App\Models\MirobidProduct;
 use App\Models\Gallery;
 use App\Models\MirobidStaff;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Hash;
 class PageController extends Controller
 {
     public function main_page(){
@@ -86,4 +86,5 @@ class PageController extends Controller
     public function login(){
         return view('auth.login');
     }
+   
 }

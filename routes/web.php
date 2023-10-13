@@ -8,6 +8,7 @@ use App\Http\Controllers\MirobidStaffController;
 use App\Http\Controllers\SertificateController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\SlayderContentController;
+use App\Http\Controllers\AuthController;
 
 // Backend route
 Route::get('/', [PageController::class, 'main_page'])->name('/');
@@ -43,3 +44,6 @@ Route::get('/aloqa', [PageController::class, 'aloqa'])->name('aloqa');
 Route::get('/mahsulotlar', [PageController::class, 'mahsulotlar'])->name('mahsulotlar');
 Route::get('/guvohnoma', [PageController::class, 'guvohnoma'])->name('guvohnoma');
 Route::get('/yetkazib_berish', [PageController::class, 'yetkazib_berish'])->name('yetkazib_berish');
+// Auth controller 
+Route::post('/authenticate', [AuthController::class, 'authenticate'])->name('authenticate');
+Route::post('/logout', [AuthController::class, 'logout'])->name('logout');

@@ -47,27 +47,24 @@
             <div>
               <div><a class="logo" href="index.html"><img class="img-fluid for-light" src="../assets/images/logo/logo2.png" alt="looginpage"></a></div>
               <div class="login-main">
-                <form class="theme-form">
+                <form class="theme-form" action="{{route('authenticate')}}" method="post">
+                  @csrf
                   <h4 class="text-center">Boshqaruv tizimiga kirish</h4>
-                  <p class="text-center">Foydalanuvchi nomi va parolni kiriting</p>
+                  <p class="text-center text-danger"></p>
                   <div class="form-group">
                     <label class="col-form-label">Foydalanuvchi nomi</label>
-                    <input class="form-control" type="email" required="" placeholder="User name">
+                    <input class="form-control" name="email" type="text"  placeholder="User name">
                   </div>
                   <div class="form-group">
                     <label class="col-form-label">Prol</label>
                     <div class="form-input position-relative">
-                      <input class="form-control" type="password" name="login[password]" required="" placeholder="Parol">
+                      <input class="form-control" type="password" name="password"  placeholder="Parol">
                       <div class="show-hide"><span class="show">                         </span></div>
                     </div>
                   </div>
                   <div class="form-group mb-0">
-                    {{-- <div class="checkbox p-0">
-                      <input id="checkbox1" type="checkbox">
-                      <label class="text-muted" for="checkbox1">Remember password</label>
-                    </div><a class="link" href="forget-password.html">Forgot password?</a> --}}
                     <div class="text-end mt-3">
-                      <button class="btn btn-primary btn-block w-100" type="submit">Kirish                 </button>
+                      <button type="submit" class="btn btn-primary btn-block w-100" type="submit">Kirish</button>
                     </div>
                   </div>
                   
