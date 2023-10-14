@@ -81,6 +81,15 @@ class GalleryController extends Controller
      */
     public function destroy(Gallery $gallery)
     {
+        if(Storage::exists($gallery->slayder_img)){
+            Storage::delete($gallery->slayder_img);
+            /*
+                Delete Multiple files this way
+                Storage::delete(['upload/test.png', 'upload/test2.png']);
+            */
+        }else{
+            dd('File does not exist.');
+        }
         $gallery->delete();
         return redirect()->back();
     }
