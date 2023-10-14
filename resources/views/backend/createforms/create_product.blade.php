@@ -54,8 +54,11 @@ Mahsulotlarni yaratish
                           <div class="mb-3">
                             <label>Mahsulot turi</label>
                             <select class="form-select @error('product_type') is-invalid  @enderror" name="product_type">
-                              <option>Mahsulot turini tanlang</option>
-                              <option>Fix price</option>
+                              <option value="Mahsulot turini tanlang">Mahsulot turini tanlang</option>
+                              <option value="Toqilmagan mato"> To'qilmagan mato</option>
+                              <option value="Vafli mato">Vafli mato</option>
+                              <option value="Vata prima">Vata prima</option>
+                              <option value="Teri sochiqlar">Teri sochiqlar</option>
                             </select>
                             @error('product_type')
                                 <div class="text-danger">{{ $message }}</div>

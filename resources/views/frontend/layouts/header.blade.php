@@ -70,9 +70,8 @@
 
                             <div class="header-menu-select d-flex align-items-center justify-content-end">
                                 <div class="tj-header-button d-none d-lg-block">
-                                    <a class="tj-header-btn" href="{{route('login')}}">
-                                        Kirish <i class="flaticon-right-1"></i>
-                                    </a>
+                                    
+                                    
                                 </div>
                                 <div class="tj-hambagur-icon d-lg-none">
                                     <a class="canva_expander nav-menu-link menu-button" href="#">

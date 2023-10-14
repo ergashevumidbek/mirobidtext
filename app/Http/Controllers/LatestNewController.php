@@ -50,7 +50,7 @@ class LatestNewController extends Controller
             'main_content'=>$request->main_content
         ]);
         $news_data->save();
-        return redirect()->route('backend.mirobidtext_news.index');
+        return redirect()->route('mirobidtext_news.index');
     }
 
     /**

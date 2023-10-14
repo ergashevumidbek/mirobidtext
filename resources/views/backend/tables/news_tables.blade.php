@@ -33,9 +33,9 @@ Yangiliklar
                         <td>{{$value->id}}</td>
                         <td>{{$value->news_title}}</td>
                         <td>{{$value->news_short_content}}</td>
-                        <td> <img src="{{asset('/storage/'.$value->banner_img)}}" style="width: 50px;height:50px;" alt="" class=""></td>
-                        <td><img src="{{asset('/storage/'.$value->news_img_1)}}" style="width: 50px;height:50px;" alt="" class=""></td>
-                        <td><img src="{{asset('/storage/'.$value->news_img_2)}}" style="width: 50px;height:50px;" alt="" class=""></td>
+                        <td> <img src="{{asset('storage/'.$value->banner_img)}}" style="width: 50px;height:50px;" alt="" class=""></td>
+                        <td><img src="{{asset('storage/'.$value->news_img_1)}}" style="width: 50px;height:50px;" alt="" class=""></td>
+                        <td><img src="{{asset('storage/'.$value->news_img_2)}}" style="width: 50px;height:50px;" alt="" class=""></td>
                         <td>{{$value->created_at}}</td>
                         <td>
                           <ul class="action">

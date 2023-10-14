@@ -59,19 +59,15 @@ Salyder Qo'shish
                             <label>Slayder rasm</label>
                             <input class="form-control @error('slayder_img')
 
-                            @enderror" type="file" name="slayder_img" placeholder="Qisqa matn" value="{{ old('slayder_img') }}">
+                            @enderror" type="file" name="slayder_img" placeholder="Qisqa matn"  >
                             @error('slayder_img')
                                 <div class="text-danger">{{ $message }}</div>
                             @enderror
                           </div>
                         </div>
                       <label for="">Slayder tarif</label>
-                      <textarea name="slayder_label @error('slayder_label')
-
-                      @enderror" id="" cols="30" rows="10">{{ old('slayder_label') }}</textarea>
-                      @error('slayder_label')
-                                <div class="text-danger">{{ $message }}</div>
-                            @enderror
+                      <textarea name="slayder_label " id="" cols="30" rows="10"></textarea>
+                     
 
                     </div>
                     <div class="row">

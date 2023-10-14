@@ -13,10 +13,10 @@ return new class extends Migration
     {
         Schema::create('slayder_contents', function (Blueprint $table) {
             $table->id();
-            $table->string('slayder_main_text');
-            $table->string('slayder_short_text');
-            $table->string('slayder_img');
-            $table->string('slayder_label');
+            $table->text('slayder_main_text');
+            $table->text('slayder_short_text');
+            $table->string('slayder_img', 255);
+            $table->text('slayder_label');
             $table->timestamps();
         });
     }

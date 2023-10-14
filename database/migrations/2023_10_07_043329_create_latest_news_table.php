@@ -15,10 +15,10 @@ return new class extends Migration
             $table->id();
             $table->string('news_title');
             $table->string('news_short_content');
-            $table->string('banner_img');
-            $table->string('news_img_1');
-            $table->string('news_img_2');
-            $table->string('main_content');
+            $table->string('banner_img', 255);
+            $table->string('news_img_1', 255);
+            $table->string('news_img_2', 255);
+            $table->text('main_content');
             $table->timestamps();
         });
     }

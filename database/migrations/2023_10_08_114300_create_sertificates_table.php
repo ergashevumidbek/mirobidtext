@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('sertificates', function (Blueprint $table) {
             $table->id();
-            $table->string('gost_name');
-            $table->string('gost_banner_img');
-            $table->string('gost_label');
+            $table->string('gost_name',255);
+            $table->string('gost_banner_img',255);
+            $table->text('gost_label',255);
             $table->timestamps();
         });
     }

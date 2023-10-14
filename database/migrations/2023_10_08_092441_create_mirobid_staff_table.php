@@ -13,11 +13,11 @@ return new class extends Migration
     {
         Schema::create('mirobid_staff', function (Blueprint $table) {
             $table->id();
-            $table->string('staff_name');
-            $table->string('staff_surname');
-            $table->string('staff_profission');
-            $table->string('staff_img');
-            $table->string('staff_bio');
+            $table->string('staff_name',255);
+            $table->string('staff_surname',255);
+            $table->string('staff_profission',255);
+            $table->string('staff_img',255);
+            $table->text('staff_bio');
             $table->timestamps();
         });
     }
