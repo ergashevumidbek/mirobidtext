@@ -4,13 +4,19 @@ namespace App\Http\Controllers;
 use App\Models\LatestNew;
 use App\Models\MirobidProduct;
 use App\Models\Gallery;
+use App\Models\SlayderContent;
 use App\Models\MirobidStaff;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\DB;
 class PageController extends Controller
 {
     public function main_page(){
-        return view('frontend.main_page');
+        $slide_data = DB::table('slayder_contents')
+        ->offset(10)
+        ->limit(3)
+        ->get();
+        return view('frontend.main_page')->with(['slide_img' => $slide_data]);
     }
     public function dashboard(){
         $mirobid_news = LatestNew::all()->count();

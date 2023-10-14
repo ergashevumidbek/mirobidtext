@@ -29,6 +29,7 @@ class SertificateController extends Controller
      */
     public function store(Request $request)
     {
+        // dd($request);
         $request->validate([
             'gost_name'=>'required',
             'gost_banner_img'=>'required|mimes:png,jpg,jpeg',
@@ -86,6 +87,15 @@ class SertificateController extends Controller
      */
     public function destroy(Sertificate $sertificate)
     {
+        if(Storage::exists($sertificate->slayder_img)){
+            Storage::delete($sertificate->slayder_img);
+            /*
+                Delete Multiple files this way
+                Storage::delete(['upload/test.png', 'upload/test2.png']);
+            */
+        }else{
+            dd('File does not exist.');
+        }
         $sertificate->delete();
         return redirect()->back();
     }

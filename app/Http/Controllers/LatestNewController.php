@@ -30,6 +30,7 @@ class LatestNewController extends Controller
      */
     public function store(Request $request)
     {
+        dd($request);
         $request->validate([
             'news_title'=>'required',
             'news_short_content'=>'required',
@@ -107,6 +108,15 @@ class LatestNewController extends Controller
      */
     public function destroy(LatestNew $mirobidtext_news)
     {
+        if(Storage::exists($mirobidtext_news->slayder_img)){
+            Storage::delete($mirobidtext_news->slayder_img);
+            /*
+                Delete Multiple files this way
+                Storage::delete(['upload/test.png', 'upload/test2.png']);
+            */
+        }else{
+            dd('File does not exist.');
+        }
         $mirobidtext_news->delete();
         return redirect()->back();
     }

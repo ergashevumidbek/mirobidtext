@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\Storage;
 use App\Models\SlayderContent;
 use Illuminate\Http\Request;
 
@@ -29,22 +29,20 @@ class SlayderContentController extends Controller
      */
     public function store(Request $request)
     {
-        // dd($request);
         $request->validate([
             'slayder_main_text'=>'required',
             'slayder_short_text'=>'required',
-            'slayder_img'=>  'required',
+            'slayder_img'=>  'required|mimes:png,jpg,jpeg',
             'slayder_label'=>'required'
-        ]);
-        $slayd_file = $request->file('slayder_img')->store('slayder_img');
-        $slayder = SlayderContent::create([
+        ]);  
+        $slide_file = $request->file('slayder_img')->store('slide_img');
+        $slide = SlayderContent::create([
             'slayder_main_text'=>$request->slayder_main_text,
             'slayder_short_text'=>$request->slayder_short_text,
-            'slayder_img'=>  $slayd_file ?? 'default_img/no_img.jpg',
+            'slayder_img'=>$slide_file,
             'slayder_label'=>$request->slayder_label
         ]);
-
-        $slayder->save();
+        $slide->save();
         return redirect()->route('slayder_content.index');
     }
 
@@ -87,8 +85,18 @@ class SlayderContentController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(SlayderContent $slayderContent)
+    public function destroy( SlayderContent $slayderContent)
     {
+        // dd($slayderContent);
+        if(Storage::exists($slayderContent->slayder_img)){
+            Storage::delete($slayderContent->slayder_img);
+            /*
+                Delete Multiple files this way
+                Storage::delete(['upload/test.png', 'upload/test2.png']);
+            */
+        }else{
+            dd('File does not exist.');
+        }
         $slayderContent->delete();
         return redirect()->back();
     }

@@ -35,7 +35,7 @@ Salyder Qo'shish
                           <label>Slayder asosiy matn</label>
                           <input class="form-control @error('slayder_main_text')
                               is-invalid
-                          @enderror" type="text" name="slayder_main_text" placeholder="Slayder asosiy matn" value="{{ old('slayder_main_text') }}">
+                          @enderror" type="text" name="slayder_main_text" placeholder="Slayder asosiy matn">
                           @error('slayder_main_text')
                                 <div class="text-danger">{{ $message }}</div>
                             @enderror
@@ -48,7 +48,7 @@ Salyder Qo'shish
                           <label>Slayder qisqa matn</label>
                           <input class="form-control @error('slayder_short_text')
 
-                          @enderror" type="text" name="slayder_short_text" placeholder="Qisqa matn" value="{{ old('slayder_short_text') }}">
+                          @enderror" type="text" name="slayder_short_text" placeholder="Qisqa matn" >
                           @error('slayder_short_text')
                                 <div class="text-danger">{{ $message }}</div>
                             @enderror
@@ -65,14 +65,13 @@ Salyder Qo'shish
                             @enderror
                           </div>
                         </div>
-                      <label for="">Slayder tarif</label>
-                      <textarea name="slayder_label " id="" cols="30" rows="10"></textarea>
-                     
-
+                      <label for="">Slayderga tarif</label>
+                      <textarea name="slayder_label" id="" cols="30" rows="10"></textarea>
                     </div>
                     <div class="row">
                       <div class="col">
-                        <div class="text-end"><input type="submit" value="Saqlash" class="btn btn-success me-3" ><a class="btn btn-danger" href="{{route('slayder_content.index')}}">Bekor qilish</a></div>
+                        <div class="text-end">
+                          <input type="submit" value="Saqlash" class="btn btn-success me-3" ><a class="btn btn-danger" href="{{route('slayder_content.index')}}">Bekor qilish</a></div>
                       </div>
                     </div>
                   </div>

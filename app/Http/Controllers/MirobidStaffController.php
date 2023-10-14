@@ -91,6 +91,15 @@ class MirobidStaffController extends Controller
      */
     public function destroy(MirobidStaff $mirobidStaff)
     {
+        if(Storage::exists($mirobidStaff->slayder_img)){
+            Storage::delete($mirobidStaff->slayder_img);
+            /*
+                Delete Multiple files this way
+                Storage::delete(['upload/test.png', 'upload/test2.png']);
+            */
+        }else{
+            dd('File does not exist.');
+        }
         $mirobidStaff->delete();
         return redirect()->back();
     }
