@@ -11,8 +11,8 @@
         <div class="container">
             <div class="row">
                 <div class="tj-section-heading text-center">
-                    <span class="sub-title active-shape"> Latest Projects</span>
-                    <h2 class="title">Works Across The World</h2>
+                    <span class="sub-title active-shape"> Mirobidtex</span>
+                    <h2 class="title">Bizning mahsulotlar</h2>
                 </div>
             </div>
             <div class="row">

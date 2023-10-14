@@ -63,7 +63,10 @@
     <!--=========== Slider Section End =========-->
 
     <!--=========== Service Section Start =========-->
-    <section class="tj-service-section">
+    <section class="tj-service-section" style="
+    position: relative;
+    top: -110px;
+">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -74,7 +77,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="100">
+                <div class="col-lg-4 col-md-6">
                     <div class="tj-service-item" data-bg-image="front_asset/images/service/service-1.jpg">
 
                         <div class="service-content">
@@ -83,7 +86,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="200">
+                <div class="col-lg-4 col-md-6" >
                     <div class="tj-service-item" data-bg-image="front_asset/images/service/service-2.jpg">
 
                         <div class="service-content">
@@ -94,7 +97,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="300">
+                <div class="col-lg-4 col-md-6" >
                     <div class="tj-service-item" data-bg-image="front_asset/images/service/service-3.jpg">
 
                         <div class="service-content">
@@ -142,10 +145,12 @@
     <!--=========== Cta Section End =========-->
 
     <!--=========== About Section Start =========-->
-    <section class="tj-about-section">
+    <section class="tj-about-section" style="-webkit-box-shadow: 2px 9px 25px -1px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 2px 9px 25px -1px rgba(34, 60, 80, 0.2);
+    box-shadow: 2px 9px 25px -1px rgba(34, 60, 80, 0.2);">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6" data-sal="slide-left" data-sal-duration="800">
+                <div class="col-lg-6" >
                     <div class="about-content-one">
                         <div class="tj-section-heading">
                             <span class="sub-title active-shape"> MChJ "Mirobid Textile"</span>
@@ -193,7 +198,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6" data-sal="slide-right" data-sal-duration="800">
+                <div class="col-lg-6" >
                     <div class="about-group-image d-flex flex-wrap align-items-start flex-column">
                         <div class="tj-icon-box2 text-center">
                             <div class="number-icon">
@@ -218,7 +223,10 @@
 
 
     <!--=========== Blog Section Start =========-->
-    <section class="tj-blog-section">
+    <section class="tj-blog-section" style="
+    position: relative;
+    top: -80px;
+">
         <div class="container">
             <div class="row">
                 <div class="tj-section-heading text-center">
@@ -227,7 +235,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="300">
+                <div class="col-lg-4 col-md-6" >
                     <div class="tj-blog-item">
                         <div class="tj-blog-image">
                             <a href="blog-details.html"> <img src="front_asset/images/blog/blog-1.jpg" alt="Blog" /></a>
@@ -259,7 +267,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="400">
+                <div class="col-lg-4 col-md-6" >
                     <div class="tj-blog-item">
                         <div class="tj-blog-image">
                             <a href="blog-details.html"> <img src="front_asset/images/blog/blog-2.jpg" alt="Blog" /></a>
@@ -291,7 +299,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="500">
+                <div class="col-lg-4 col-md-6" >
                     <div class="tj-blog-item">
                         <div class="tj-blog-image">
                             <a href="blog-details.html"> <img src="front_asset/images/blog/blog-3.jpg" alt="Blog" /></a>

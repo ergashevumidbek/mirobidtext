@@ -29,6 +29,7 @@ class SlayderContentController extends Controller
      */
     public function store(Request $request)
     {
+        // dd($request);
         $request->validate([
             'slayder_main_text'=>'required',
             'slayder_short_text'=>'required',
@@ -39,7 +40,7 @@ class SlayderContentController extends Controller
         $slayder = SlayderContent::create([
             'slayder_main_text'=>$request->slayder_main_text,
             'slayder_short_text'=>$request->slayder_short_text,
-            'slayder_img'=>  $slayd_file ?? null,
+            'slayder_img'=>  $slayd_file ?? 'default_img/no_img.jpg',
             'slayder_label'=>$request->slayder_label
         ]);
 

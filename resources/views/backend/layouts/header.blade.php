@@ -35,10 +35,22 @@
           <li class="profile-nav onhover-dropdown">
             <div class="account-user"><i data-feather="user"></i></div>
             <ul class="profile-dropdown onhover-show-div">
-              <li><a href="user-profile.html"><i data-feather="user"></i><span>Account</span></a></li>
+              {{-- <li><a href="user-profile.html"><i data-feather="user"></i><span>Account</span></a></li>
               <li><a href="email_inbox.html"><i data-feather="mail"></i><span>Inbox</span></a></li>
-              <li><a href="edit-profile.html"><i data-feather="settings"></i><span>Settings</span></a></li>
-              <li><a href="login.html"><i data-feather="log-in"> </i><span>Log in</span></a></li>
+              <li><a href="edit-profile.html"><i data-feather="settings"></i><span>Settings</span></a></li> --}}
+              <li>
+                @auth
+                <form action="{{route('logout')}}" method="post" >
+                  @csrf
+                  <button type="submit" class="btn btn-primary"> Chiqish</button>
+                </form>
+                {{-- <a href="{{route('dashboard')}}"><i data-feather="log-in"> </i><span>Profile</span></a> --}}
+                @else
+                <a href="{{route('dashboard')}}"><i data-feather="log-in"> </i><span>Setting</span></a>
+                
+                @endauth
+                
+              </li>
             </ul>
           </li>
         </ul>

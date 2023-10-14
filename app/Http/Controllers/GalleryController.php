@@ -41,7 +41,7 @@ class GalleryController extends Controller
             'gallery_img'=>$gallery_img
         ]);
         $gallery_data->save();
-        return redirect()->route('backend.gallery.index');
+        return redirect()->route('gallery.index');
     }
 
     public function show(Gallery $gallery)

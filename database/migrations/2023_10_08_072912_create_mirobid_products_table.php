@@ -13,13 +13,13 @@ return new class extends Migration
     {
         Schema::create('mirobid_products', function (Blueprint $table) {
             $table->id();
-            $table->string('product_name');
-            $table->string('pro_short_content');
-            $table->string('product_type');
-            $table->string('pro_banner_img');
-            $table->string('pro_content_img');
-            $table->string('pro_label');
-            $table->string('pro_spesificate');
+            $table->string('product_name',255);
+            $table->string('pro_short_content',255);
+            $table->text('product_type',255);
+            $table->string('pro_banner_img',255);
+            $table->string('pro_content_img', 255);
+            $table->text('pro_label');
+            $table->text('pro_spesificate');
             $table->timestamps();
         });
     }
