@@ -6,7 +6,7 @@
                     <!-- Logo Area Start -->
                     <div class="logo-area">
                         <div class="logo-box">
-                            <a href="{{route('/')}}"> <img src="assets/images/logo/logotip-removebg-preview.png" alt="Logo" style="width: 70px; object-fit: contain; margin-left: 60px;" /></a>
+                            <a href="{{route('/')}}"> <img src="{{asset('assets/images/logo/logotip-removebg-preview.png')}}" alt="Logo" style="width: 70px; object-fit: contain; margin-left: 60px;" /></a>
                         </div>
                     </div>
                     <!-- Logo Area End -->
@@ -74,12 +74,12 @@
                                             <ul class="lang_lists">
                                                 <li>
                                                     <a style="display: flex; color:#062e39;" 
-                                                        ><img src="front_asset/images/flaguzb.jpg" style="border: 0.5px solid #cac6c6; margin-right: 4px; " alt="Icon"
+                                                        ><img src="{{asset('front_asset/images/flaguzb.jpg')}}" style="border: 0.5px solid #cac6c6; margin-right: 4px; " alt="Icon"
                                                     /> Uzb</a>
                                                 </li>
                                                 <li class="active">
                                                     <a style="display: flex; color:#062e39;"
-                                                        ><img src="front_asset/images/rusia.png" style="border: 0.5px solid #cac6c6; margin-right: 4px;" alt="Icon" 
+                                                        ><img src="{{asset('front_asset/images/rusia.png')}}" style="border: 0.5px solid #cac6c6; margin-right: 4px;" alt="Icon" 
                                                     /> Rus</a>
                                                 </li>
                                             </ul>

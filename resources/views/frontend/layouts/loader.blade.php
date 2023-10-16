@@ -2,7 +2,7 @@
     <div class="animation-preloader">
         <div class="spinner">
             <div class="loader-icon">
-                <img src="assets/images/logo/logotip-removebg-preview.png" alt="Corporate Business HTML Template" />
+                <img src="{{asset('assets/images/logo/logotip-removebg-preview.png')}}" alt="Corporate Business HTML Template" />
             </div>
         </div>
         <div class="txt-loading">

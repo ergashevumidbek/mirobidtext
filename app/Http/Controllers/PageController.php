@@ -12,11 +12,14 @@ use Illuminate\Support\Facades\DB;
 class PageController extends Controller
 {
     public function main_page(){
-        $slide_data = DB::table('slayder_contents')
-        ->offset(10)
-        ->limit(3)
-        ->get();
-        return view('frontend.main_page')->with(['slide_img' => $slide_data]);
+        $latest_news = DB::table('latest_news')->latest()->limit(3)->get();
+        $product = DB::table('mirobid_products')->latest()->limit(3)->get();
+        $slide_data = DB::table('slayder_contents')->latest()->limit(3)->get();
+        return view('frontend.main_page')->with([
+            'slide_data' => $slide_data,
+            'latest_news'=>$latest_news,
+            'product' => $product
+    ]);
     }
     public function dashboard(){
         $mirobid_news = LatestNew::all()->count();

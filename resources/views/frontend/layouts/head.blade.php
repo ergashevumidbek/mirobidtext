@@ -7,31 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" href="front_asset/images/logo/logotip-removebg-preview.png" />
-    <link rel="shortcut icon" type="image/x-icon" href="front_asset/images/logo/logotip-removebg-preview.png" />
+    <link rel="apple-touch-icon" href="{{asset('front_asset/images/logo/logotip-removebg-preview.png')}}" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset('front_asset/images/logo/logotip-removebg-preview.png')}}" />
 
     <!-- Bootstrap  v5.1.3 css -->
-    <link rel="stylesheet" href="front_asset/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="{{asset('front_asset/css/bootstrap.min.css')}}" />
     <!-- Meanmenu  css -->
-    <link rel="stylesheet" href="front_asset/css/meanmenu.css" />
+    <link rel="stylesheet" href="{{asset('front_asset/css/meanmenu.css')}}" />
     <!-- Sal css -->
-    <link rel="stylesheet" href="front_asset/css/sal.css" />
+    <link rel="stylesheet" href="{{asset('front_asset/css/sal.css')}}" />
     <!-- Magnific css -->
-    <link rel="stylesheet" href="front_asset/css/magnific-popup.css" />
+    <link rel="stylesheet" href="{{asset('front_asset/css/magnific-popup.css')}}" />
     <!-- Swiper Slider css -->
-    <link rel="stylesheet" href="front_asset/css/swiper.min.css" />
+    <link rel="stylesheet" href="{{asset('front_asset/css/swiper.min.css')}}" />
     <!-- Carousel css file -->
-    <link rel="stylesheet" href="front_asset/css/owl.carousel.css" />
+    <link rel="stylesheet" href="{{asset('front_asset/css/owl.carousel.css')}}" />
     <!-- Icons css -->
-    <link rel="stylesheet" href="front_asset/css/icons.css" />
+    <link rel="stylesheet" href="{{asset('front_asset/css/icons.css')}}" />
     <!-- Odometer css -->
-    <link rel="stylesheet" href="front_asset/css/odometer.min.css" />
+    <link rel="stylesheet" href="{{asset('front_asset/css/odometer.min.css')}}" />
     <!-- Select css -->
-    <link rel="stylesheet" href="front_asset/css/nice-select.css" />
+    <link rel="stylesheet" href="{{asset('front_asset/css/nice-select.css')}}" />
     <!-- Animate css -->
-    <link rel="stylesheet" href="front_asset/css/animate.css" />
+    <link rel="stylesheet" href="{{asset('front_asset/css/animate.css')}}" />
     <!-- Style css -->
-    <link rel="stylesheet" href="front_asset/css/style.css" />
+    <link rel="stylesheet" href="{{asset('front_asset/css/style.css')}}" />
     <!-- Responsive css -->
-    <link rel="stylesheet" href="front_asset/css/responsive.css" />
+    <link rel="stylesheet" href="{{asset('front_asset/css/responsive.css')}}" />
 </head>

@@ -59,7 +59,9 @@ class MirobidProductController extends Controller
      */
     public function show(MirobidProduct $mirobidProduct)
     {
-        //
+        // dd($mirobidProduct);
+        $product = MirobidProduct::find($mirobidProduct);
+        return view('frontend.detail_page.product_detail')->with(['mirobidProduct'=>$product]);
     }
 
     /**
@@ -67,6 +69,7 @@ class MirobidProductController extends Controller
      */
     public function edit(MirobidProduct $mirobidProduct)
     {
+        // dd($mirobidProduct);
         return view('backend.edit.product_edit')->with('mirobidProduct', $mirobidProduct);
     }
 
@@ -75,12 +78,13 @@ class MirobidProductController extends Controller
      */
     public function update(Request $request, MirobidProduct $mirobidProduct)
     {
-        if($request->hasFile('pro_banner_img')){
+        // dd($mirobidProduct);
+        if($request->file('pro_banner_img')){
             if(isset($mirobidProduct->pro_banner_img)){
                 Storage::delete($mirobidProduct->pro_banner_img);
             }
             $pro_banner_img = $request->file('pro_banner_img')->store('product_img');
-        }elseif($request->hasFile('pro_content_img')){
+        }elseif($request->file('pro_content_img')){
             if(isset($mirobidProduct->pro_content_img)){
                 Storage::delete($mirobidProduct->pro_content_img);
             }
@@ -90,7 +94,7 @@ class MirobidProductController extends Controller
             'product_name'=>$request->product_name,
             'pro_short_content'=>$request->pro_short_content,
             'product_type'=>$request->product_type,
-            'pro_banner_img'=>$pro_banner_img ?? $mirobidProduct->banner_img,
+            'pro_banner_img'=>$pro_banner_img ?? $mirobidProduct->pro_banner_img,
             'pro_content_img'=>$pro_content_img ?? $mirobidProduct->pro_content_img,
             'pro_label'=>$request->pro_label,
             'pro_spesificate'=>$request->pro_spesificate
