@@ -1,17 +1,19 @@
 @extends('frontend.layouts.master')
 @section('main_content')
     <!--========== blog details Start ==============-->
-    <section class="tj-project-details">
+    
+    <section class="tj-project-details my-5">
         <div class="container">
             <div class="row">
+                @foreach ($mirobidProduct as $value)
                 <div class="col-lg-12">
                     <div class="project-details-wrapper">
                         <div class="tj-project-widget tj-project-image">
                             <a href="project-details.html">
-                                <img src="assets/images/project/project-7.jpg" alt="Project"
+                                <img src="{{asset('storage/'.$value->pro_banner_img)}}" alt="Project"
                             /></a>
                             <div class="active-introduction">
-                                <h5 class="project_title">Project Details</h5>
+                                <h5 class="project_title">{{$value->product_name}}</h5>
                                 <div class="project-client">
                                     <ul class="list-gap">
                                         <li><span> Client: </span> Nguyen, Shane</li>
@@ -27,19 +29,7 @@
                                     Here to Know About This Project</a
                                 >
                             </h3>
-                            <p>
-                                As the infamous truck driver shortage continues like an endless long haul, companies
-                                with products to move are nervously eyeing the future. The expansion of e-commerce
-                                and the increasing consumer demands only make the driver shortage much more
-                                imperative for shippers to solve. Unfortunately, there’s another shortage in the
-                                supply chain that isn’t snagging as many headlines but will affect your supply chain
-                                just as much. Companies that rely on air freight may want to buckle up: there’s
-                                structural turbulence at 20,000 feet in the form of a pilot shortage.As the infamous
-                                truck driver shortage continues like an endless long haul, companies with products
-                                to move are nervously eyeing the future. The expansion of e-commerce and the
-                                increasing consumer demands only make the driver shortage much more imperative for
-                                shippers to solve. Unfortunately, there’s anoth
-                            </p>
+                            {{$value->main_content}}
                         </div>
                         <div class="tj-project-widget row align-items-center">
                             <div class="col-lg-5">
@@ -48,14 +38,8 @@
                                     <div class="tj-video-area text-center">
                                         <div class="tj-video-popup">
                                             <div class="circle pulse video-icon">
-                                                <a
-                                                    class="venobox popup-videos-button"
-                                                    data-autoplay="true"
-                                                    data-vbtype="video"
-                                                    href="https://www.youtube.com/watch?v=ADmQTw4qqTY"
-                                                >
-                                                    <i class="fa-solid fa-play"></i>
-                                                </a>
+                                                <img class="venobox popup-videos-button" src="{{asset('storage/'.$value->pro_content_img)}}" alt="">
+                                               
                                             </div>
                                         </div>
                                     </div>
@@ -63,12 +47,9 @@
                             </div>
                             <div class="col-lg-7">
                                 <div class="check-list">
-                                    <h3 class="title">Logistics Around the World</h3>
+                                    <h3 class="title">{{$value->pro_short_content}}</h3>
                                     <p>
-                                        The languages only differ in their grammar, their pronu nciation and their
-                                        most common words. sometimes by accident, sometimes on purpose. European
-                                        languages are members of the same family european languages are members of
-                                        the same family.
+                                        {{$value->pro_label}}
                                     </p>
                                     <ul class="list-gap">
                                         <li>
@@ -97,6 +78,8 @@
                         </div>
                     </div>
                 </div>
+             @endforeach
+               
             </div>
         </div>
     </section>

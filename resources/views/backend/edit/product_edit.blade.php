@@ -56,14 +56,14 @@ Mahsulotlarni taxrirlash
                         <div class="col-sm-4">
                           <div class="mb-3">
                             <label>Mahsulot banner rasm</label>
-                            <input class="form-control" type="file" name="pro_banner_img" placeholder="Mahsulot turi" value="{{$mirobidProduct->pro_banner_img}}">
+                            <input class="form-control" type="file" name="pro_banner_img" placeholder="Mahsulot turi" >
                           </div>
                         </div>
 
                         <div class="col-sm-4">
                           <div class="mb-3">
                             <label>Kontent rasm (bir nechta)</label>
-                            <input class=" form-control" name="pro_content_img" type="file" value="{{$mirobidProduct->pro_content_img}}">
+                            <input class=" form-control" name="pro_content_img" type="file" >
                           </div>
                         </div>
                     </div>

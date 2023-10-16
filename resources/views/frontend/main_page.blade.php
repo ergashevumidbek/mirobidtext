@@ -5,57 +5,24 @@
         <div class="slider_shape"><img src="front_asset/images/banner/shape-1.png" alt="Image" /></div>
         <div class="swiper sc-slider-1">
             <div class="swiper-wrapper">
-                <div class="swiper-slide" data-bg-image="front_asset/images/slider/slider-2.jpg">
+                @foreach ($slide_data as $value)
+                <div class="swiper-slide" data-bg-image="{{asset('storage/'.$value->slayder_img)}}">
                     <div class="container">
                         <div class="slider-content p-z-idex">
-                            <h1 class="slider-title">Flexible Transport And Logistics Services</h1>
+                            <h1 class="slider-title">{{$value->slayder_short_text}}</h1>
                             <div class="slider-desc">
-                                Explain to you how all this mistaken denouncing pleasure and praising pain was born
-                                and we will give you
+                                {{$value->slayder_main_text}}
                             </div>
                             <div class="tj-theme-button">
                                 <a class="tj-transparent-btn" href="contact.html">
-                                    Read More <i class="flaticon-right-1"></i>
+                                    Batafsil <i class="flaticon-right-1"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="banner-shape"></div>
                 </div>
-                <div class="swiper-slide" data-bg-image="front_asset/images/slider/slider-1.jpg">
-                    <div class="container">
-                        <div class="slider-content p-z-idex">
-                            <h1 class="slider-title">Flexible Transport And Logistics Services</h1>
-                            <div class="slider-desc">
-                                Explain to you how all this mistaken denouncing pleasure and praising pain was born
-                                and we will give you
-                            </div>
-                            <div class="tj-theme-button">
-                                <a class="tj-transparent-btn" href="contact.html">
-                                    Read More <i class="flaticon-right-1"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="banner-shape"></div>
-                </div>
-                <div class="swiper-slide" data-bg-image="front_asset/images/slider/slider-2.jpg">
-                    <div class="container">
-                        <div class="slider-content p-z-idex">
-                            <h1 class="slider-title">Flexible Transport And Logistics Services</h1>
-                            <div class="slider-desc">
-                                Explain to you how all this mistaken denouncing pleasure and praising pain was born
-                                and we will give you
-                            </div>
-                            <div class="tj-theme-button">
-                                <a class="tj-transparent-btn" href="contact.html">
-                                    Read More <i class="flaticon-right-1"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="banner-shape"></div>
-                </div>
+                @endforeach
             </div>
             <div class="swiper-pagination"></div>
         </div>
@@ -77,35 +44,17 @@
                 </div>
             </div>
             <div class="row">
+                @foreach ($product as $value)
                 <div class="col-lg-4 col-md-6">
-                    <div class="tj-service-item" data-bg-image="front_asset/images/service/service-1.jpg">
+                    <div class="tj-service-item" data-bg-image="{{asset('storage/'.$value->pro_banner_img)}}">
 
                         <div class="service-content">
-                            <h4><a class="title-link" href="service-details.html"> Air Freight Service</a></h4>
-                            <p>Long established fact that reader will be distracted by the</p>
+                            <h4><a class="title-link" href="{{route('mirobid_product.show', ['mirobid_product'=>$value->id])}}">{{$value->product_name}}</a></h4>
+                            <p>{{$value->pro_short_content}}</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6" >
-                    <div class="tj-service-item" data-bg-image="front_asset/images/service/service-2.jpg">
-
-                        <div class="service-content">
-                            <h4>
-                                <a class="title-link" href="service-details.html"> Ship Transport</a>
-                            </h4>
-                            <p>Long established fact that reader will be distracted by the</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6" >
-                    <div class="tj-service-item" data-bg-image="front_asset/images/service/service-3.jpg">
-
-                        <div class="service-content">
-                            <h4><a class="title-link" href="service-details.html"> Road Transport</a></h4>
-                            <p>Long established fact that reader will be distracted by the</p>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>
@@ -235,7 +184,40 @@
                 </div>
             </div>
             <div class="row">
+                @foreach ($latest_news as $value)
                 <div class="col-lg-4 col-md-6" >
+                    <div class="tj-blog-item">
+                        <div class="tj-blog-image">
+                            <a href="blog-details.html"> <img src="{{asset('storage/'.$value->banner_img)}}" alt="Blog" /></a>
+                        </div>
+                        <div class="blog-content-area">
+
+                            <div class="blog-text-box">
+                                <div class="blog-header">
+                                    <h4>
+                                        <a class="title-link" href="blog-details.html">
+                                           {{$value->news_title}}</a
+                                        >
+                                    </h4>
+                                    <p>
+                                        {{$value->news_short_content}}
+                                    </p>
+                                </div>
+                                <div class="blog-button">
+                                    <ul class="list-gap">
+                                        <li>
+                                            <a href="blog-details.html">
+                                                Batafsil <i class="fa-regular fa-arrow-right"></i
+                                            ></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @endforeach
+                {{-- <div class="col-lg-4 col-md-6" >
                     <div class="tj-blog-item">
                         <div class="tj-blog-image">
                             <a href="blog-details.html"> <img src="front_asset/images/blog/blog-1.jpg" alt="Blog" /></a>
@@ -330,7 +312,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>
