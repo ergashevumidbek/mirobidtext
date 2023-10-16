@@ -1765,7 +1765,7 @@ body [class*=" icon-"]::before {
     align-items: end;
     margin-bottom: 25px;
     background-repeat: no-repeat;
-    background-size:  contain;
+    background-size: cover;
     background-position: center;
 }
 
@@ -5209,8 +5209,7 @@ div .tj-service-icon-box2 ul li:hover .service-item::before {
 }
 
 .tj-blog-item .tj-blog-image img {
-    height: 349px;
-    width: 420px;
+    
     transition: 0.4s;
     transform: scale(1);
 }
