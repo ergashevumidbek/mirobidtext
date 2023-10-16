@@ -1,4 +1,5 @@
-<header class="tj-header-section" id="header-sticky">
+
+<header class="tj-header-section" id="header-sticky" style="margin-top: -20px;">
     <div class="container">
         <div class="row"  style="margin-bottom: 5px;">
             <div class="col-lg-12">
@@ -29,31 +30,31 @@
                             <!-- Mainmenu Item Start -->
                             <div class="tj-main-menu d-lg-block d-none text-end" id="main-menu">
                                 <ul class="main-menu">
-                                    <li class="active current-menu-item">
+                                    <li class="  current-menu-item">
                                         <a class="active" href="{{route('/')}}">Bosh sahifa</a>
                                     </li>
 
-                                    <li class="active current-menu-item">
-                                        <a class="" href="{{route('yangiliklar')}}">Yangiliklar</a>
+                                    <li class="current-menu-item">
+                                        <a class="news" href="{{route('yangiliklar')}}">Yangiliklar</a>
                                     </li>
 
                                     <li class=" current-menu-item">
-                                        <a href="{{route('mahsulotlar')}}"> Maxsulotlar</a>
+                                        <a class="news" href="{{route('mahsulotlar')}}"> Maxsulotlar</a>
                                     </li>
 
                                     <li class="current-menu-item">
-                                        <a href="{{route('guvohnoma')}}"> Guvohnomalar</a>
+                                        <a class="news" href="{{route('guvohnoma')}}"> Guvohnomalar</a>
                                     </li>
 
                                     <li class=" current-menu-item">
-                                        <a href="{{route('yetkazib_berish')}}"> Yetkazib berish </a>
+                                        <a class="news" href="{{route('yetkazib_berish')}}"> Yetkazib berish </a>
                                     </li>
 
                                     <li>
-                                        <a href="{{route('biz_haqimizda')}}"> Biz haqimizda</a>
+                                        <a class="news" href="{{route('biz_haqimizda')}}"> Biz haqimizda</a>
                                     </li>
 
-                                    <li><a href="{{route('aloqa')}}">Aloqa</a></li>
+                                    <li><a class="news" href="{{route('aloqa')}}">Aloqa</a></li>
 
                                     {{-- <li>
                                         <a href="#" style="color: #062e39;"> <img src="front_asset\images\flaguzb.jpg" alt="" width="10" height="10"> Uz</a>

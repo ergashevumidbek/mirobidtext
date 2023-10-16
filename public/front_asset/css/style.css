@@ -5209,6 +5209,7 @@ div .tj-service-icon-box2 ul li:hover .service-item::before {
 }
 
 .tj-blog-item .tj-blog-image img {
+    
     transition: 0.4s;
     transform: scale(1);
 }
