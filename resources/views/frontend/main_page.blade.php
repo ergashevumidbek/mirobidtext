@@ -188,14 +188,14 @@
                 <div class="col-lg-4 col-md-6" >
                     <div class="tj-blog-item">
                         <div class="tj-blog-image">
-                            <a href="blog-details.html"> <img src="{{asset('storage/'.$value->banner_img)}}" alt="Blog" /></a>
+                            <p > <img src="{{asset('storage/'.$value->banner_img)}}" alt="Blog" /></p>
                         </div>
                         <div class="blog-content-area">
 
                             <div class="blog-text-box">
                                 <div class="blog-header">
                                     <h4>
-                                        <a class="title-link" href="blog-details.html">
+                                        <a class="title-link" href="{{route('mirobidtext_news.show', ['mirobidtext_news'=>$value->id])}}">
                                            {{$value->news_title}}</a
                                         >
                                     </h4>
@@ -206,7 +206,7 @@
                                 <div class="blog-button">
                                     <ul class="list-gap">
                                         <li>
-                                            <a href="blog-details.html">
+                                            <a href="{{route('mirobidtext_news.show', ['mirobidtext_news'=>$value->id])}}">
                                                 Batafsil <i class="fa-regular fa-arrow-right"></i
                                             ></a>
                                         </li>
@@ -217,102 +217,6 @@
                     </div>
                 </div>
                 @endforeach
-                {{-- <div class="col-lg-4 col-md-6" >
-                    <div class="tj-blog-item">
-                        <div class="tj-blog-image">
-                            <a href="blog-details.html"> <img src="front_asset/images/blog/blog-1.jpg" alt="Blog" /></a>
-                        </div>
-                        <div class="blog-content-area">
-
-                            <div class="blog-text-box">
-                                <div class="blog-header">
-                                    <h4>
-                                        <a class="title-link" href="blog-details.html">
-                                            Guarantees varying Complexity, Long-Term</a
-                                        >
-                                    </h4>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, atomorum ds sosidon ium est as Id vim rrem
-                                        princi pes suas molesti interpretaris
-                                    </p>
-                                </div>
-                                <div class="blog-button">
-                                    <ul class="list-gap">
-                                        <li>
-                                            <a href="blog-details.html">
-                                                Batafsil <i class="fa-regular fa-arrow-right"></i
-                                            ></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6" >
-                    <div class="tj-blog-item">
-                        <div class="tj-blog-image">
-                            <a href="blog-details.html"> <img src="front_asset/images/blog/blog-2.jpg" alt="Blog" /></a>
-                        </div>
-                        <div class="blog-content-area">
-
-                            <div class="blog-text-box">
-                                <div class="blog-header">
-                                    <h4>
-                                        <a class="title-link" href="blog-details.html">
-                                            Introduce new suas boat service in this spring</a
-                                        >
-                                    </h4>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, atomorum ds sosidon ium est as Id vim rrem
-                                        princi pes suas molesti interpretaris
-                                    </p>
-                                </div>
-                                <div class="blog-button">
-                                    <ul class="list-gap">
-                                        <li>
-                                            <a href="blog-details.html">
-                                                Batafsil <i class="fa-regular fa-arrow-right"></i
-                                            ></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6" >
-                    <div class="tj-blog-item">
-                        <div class="tj-blog-image">
-                            <a href="blog-details.html"> <img src="front_asset/images/blog/blog-3.jpg" alt="Blog" /></a>
-                        </div>
-                        <div class="blog-content-area">
-
-                            <div class="blog-text-box">
-                                <div class="blog-header">
-                                    <h4>
-                                        <a class="title-link" href="blog-details.html">
-                                            We very careful handling the valuable goods</a
-                                        >
-                                    </h4>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, atomorum ds sosidon ium est as Id vim rrem
-                                        princi pes suas molesti interpretaris
-                                    </p>
-                                </div>
-                                <div class="blog-button">
-                                    <ul class="list-gap">
-                                        <li>
-                                            <a href="blog-details.html">
-                                                Batafsil <i class="fa-regular fa-arrow-right"></i
-                                            ></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> --}}
             </div>
         </div>
     </section>

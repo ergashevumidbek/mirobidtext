@@ -9,11 +9,11 @@
                 <div class="col-lg-12">
                     <div class="project-details-wrapper">
                         <div class="tj-project-widget tj-project-image">
-                            <a href="project-details.html">
+                            
                                 <img src="{{asset('storage/'.$value->pro_banner_img)}}" alt="Project"
-                            /></a>
+                            />
                             <div class="active-introduction">
-                                <h5 class="project_title">{{$value->product_name}}</h5>
+                                <h5 class="project_title"></h5>
                                 <div class="project-client">
                                     <ul class="list-gap">
                                         <li><span> Client: </span> Nguyen, Shane</li>
@@ -26,21 +26,18 @@
                         <div class="tj-project-widget project-content-area">
                             <h3>
                                 <a class="title-link" href="project-details.html">
-                                    Here to Know About This Project</a
+                                    {{$value->product_name}}</a
                                 >
                             </h3>
-                            {{$value->main_content}}
+                            {{$value->pro_label}}
                         </div>
                         <div class="tj-project-widget row align-items-center">
                             <div class="col-lg-5">
                                 <div class="check-image">
-                                    <img src="assets/images/project/project-8.jpg" alt="Project" />
+                                    <img src="{{asset('storage/'.$value->pro_content_img)}}" alt="Project" />
                                     <div class="tj-video-area text-center">
                                         <div class="tj-video-popup">
-                                            <div class="circle pulse video-icon">
-                                                <img class="venobox popup-videos-button" src="{{asset('storage/'.$value->pro_content_img)}}" alt="">
-                                               
-                                            </div>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -48,9 +45,11 @@
                             <div class="col-lg-7">
                                 <div class="check-list">
                                     <h3 class="title">{{$value->pro_short_content}}</h3>
-                                    <p>
-                                        {{$value->pro_label}}
-                                    </p>
+                                    
+                                        <p>
+                                            {{$value->pro_spesificate}}
+                                        </p>
+                                    
                                     <ul class="list-gap">
                                         <li>
                                             <i class="fa-light fa-check"></i> Those who do not know how to pursue

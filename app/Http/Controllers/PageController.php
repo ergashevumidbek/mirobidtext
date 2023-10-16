@@ -78,7 +78,8 @@ class PageController extends Controller
         return view('frontend.service');
     }
     public function yangiliklar(){
-        return view('frontend.news');
+        $new_collaction = DB::table('latest_news')->latest()->limit(6)->get();
+        return view('frontend.news')->with(['new_collaction' => $new_collaction]);
     }
     public function biz_haqimizda(){
         return view('frontend.about_us');

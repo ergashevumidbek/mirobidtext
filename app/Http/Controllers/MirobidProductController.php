@@ -109,10 +109,6 @@ class MirobidProductController extends Controller
     {
         if(Storage::exists($mirobidProduct->slayder_img)){
             Storage::delete($mirobidProduct->slayder_img);
-            /*
-                Delete Multiple files this way
-                Storage::delete(['upload/test.png', 'upload/test2.png']);
-            */
         }else{
             dd('File does not exist.');
         }

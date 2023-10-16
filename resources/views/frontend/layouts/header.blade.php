@@ -71,16 +71,22 @@
                                     <ul class="languages dropdown">
                                         <li class="activated" style="color:#062e39;"></li>
                                         <li >
+                                            <select name="" id="" class="outline-style:none;">
+                                                <option value="">
+                                                    <a style="display: flex; color:#062e39;">
+                                                        <img src="{{asset('front_asset/images/flaguzb.jpg')}}" style="border: 0.5px solid #cac6c6; margin-right: 4px; " alt="Icon"
+                                                /> Uzb</a>
+                                            </option>
+                                                <option value=""><a style="display: flex; color:#062e39;"
+                                                    ><img src="{{asset('front_asset/images/rusia.png')}}" style="border: 0.5px solid #cac6c6; margin-right: 4px;" alt="Icon" 
+                                                /> Rus</a></option>
+                                            </select>
                                             <ul class="lang_lists">
                                                 <li>
-                                                    <a style="display: flex; color:#062e39;" 
-                                                        ><img src="{{asset('front_asset/images/flaguzb.jpg')}}" style="border: 0.5px solid #cac6c6; margin-right: 4px; " alt="Icon"
-                                                    /> Uzb</a>
+                                                    
                                                 </li>
                                                 <li class="active">
-                                                    <a style="display: flex; color:#062e39;"
-                                                        ><img src="{{asset('front_asset/images/rusia.png')}}" style="border: 0.5px solid #cac6c6; margin-right: 4px;" alt="Icon" 
-                                                    /> Rus</a>
+                                                    
                                                 </li>
                                             </ul>
                                         </li>

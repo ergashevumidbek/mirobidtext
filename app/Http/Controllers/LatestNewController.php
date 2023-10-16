@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Storage;
 use App\Models\LatestNew;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class LatestNewController extends Controller
 {
@@ -57,9 +58,16 @@ class LatestNewController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(LatestNew $latestNew)
+    public function show(LatestNew $mirobidtext_news)
     {
-
+        $latest_news = LatestNew::find($mirobidtext_news);
+        $latest_new = DB::table('latest_news')->latest()->limit(3)->get();
+      
+        return view('frontend.detail_page.news_detail')
+        ->with([
+        'latest_news'=>$latest_news, 
+        'latest_new'=>$latest_new
+    ]);
     }
 
     /**
