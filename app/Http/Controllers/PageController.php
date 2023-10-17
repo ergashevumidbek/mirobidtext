@@ -78,7 +78,8 @@ class PageController extends Controller
         return view('frontend.service');
     }
     public function yangiliklar(){
-        return view('frontend.news');
+        $new_collaction = DB::table('latest_news')->latest()->limit(6)->get();
+        return view('frontend.news')->with(['new_collaction' => $new_collaction]);
     }
     public function biz_haqimizda(){
         return view('frontend.about_us');
@@ -87,10 +88,15 @@ class PageController extends Controller
         return view('frontend.contact');
     }
     public function mahsulotlar(){
-        return view('frontend.product');
+        $product_list = DB::table('mirobid_products')->latest()->limit(6)->get();
+
+        return view('frontend.product')->with(['product_list' => $product_list]);
+        // malumot ketyapti
+
     }
     public function guvohnoma(){
-        return view('frontend.sertificate');
+        $sertificate = DB::table('sertificates')->latest()->limit(6)->get();
+        return view('frontend.sertificate')->with(['sertificates' => $sertificate]);
     }
     public function login(){
         return view('auth.login');

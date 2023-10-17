@@ -1,5 +1,6 @@
 <!-- latest jquery-->
 <script src="{{asset('../assets/js/jquery-3.6.0.min.js')}}"></script>
+<script src="{{asset('../assets/js/form-wizard/form-wizard.js')}}"></script>
 <!-- Bootstrap js-->
 <script src="{{asset('../assets/js/bootstrap/bootstrap.bundle.min.js')}}"></script>
 <!-- feather icon js-->

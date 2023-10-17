@@ -1972,6 +1972,7 @@ body [class*=" icon-"]::before {
 }
 
 .service-item-three .service-image {
+    height: 473px;
     position: relative;
     overflow: hidden;
 }
@@ -5209,7 +5210,8 @@ div .tj-service-icon-box2 ul li:hover .service-item::before {
 }
 
 .tj-blog-item .tj-blog-image img {
-    
+    height: 403px;
+    width: 400px;
     transition: 0.4s;
     transform: scale(1);
 }

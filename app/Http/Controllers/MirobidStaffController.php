@@ -21,7 +21,7 @@ class MirobidStaffController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**

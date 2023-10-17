@@ -13,77 +13,28 @@
             <div class="col-lg-12">
                 <div class="tj-section-heading text-center">
                     <span class="sub-title active-shape"> Mirobid tex</span>
-                    <h2 class="title">Korxona yangiliklari</h2>
+                    <h3 class="">Korxona yangiliklari</h3>
                 </div>
             </div>
         </div>
         <div class="row">
+            @forelse ($new_collaction as $value)
             <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="300">
                 <div class="service-item-three">
                     <div class="service-image">
-                        <img src="front_asset/images/service/service-8.jpg" alt="Image" />
+                        <img src="{{asset('storage/'.$value->banner_img)}}" alt="Image" />
                     </div>
                     <div class="service-content">
-                        <h4><a class="title" href="service-details.html"> Air Freight Service</a></h4>
-                        <p>Long established fact that reader will be distracted by the</p>
+                        <h5><a class="title" href="{{route('mirobidtext_news.show', ['mirobidtext_news'=>$value->id])}}">{{$value->news_title}}</a></h5>
+                        {{-- <p>{{$value->news_short_content}}</p> --}}
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="400">
-                <div class="service-item-three">
-                    <div class="service-image">
-                        <img src="front_asset/images/service/service-9.jpg" alt="Image" />
-                    </div>
-                    <div class="service-content">
-                        <h4><a class="title" href="service-details.html"> Ocean Freight</a></h4>
-                        <p>Long established fact that reader will be distracted by the</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="500">
-                <div class="service-item-three">
-                    <div class="service-image">
-                        <img src="front_asset/images/service/service-10.jpg" alt="Image" />
-                    </div>
-                    <div class="service-content">
-                        <h4><a class="title" href="service-details.html"> Road Transport</a></h4>
-                        <p>Long established fact that reader will be distracted by the</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="600">
-                <div class="service-item-three">
-                    <div class="service-image">
-                        <img src="front_asset/images/service/service-16.jpg" alt="Image" />
-                    </div>
-                    <div class="service-content">
-                        <h4><a class="title" href="service-details.html"> Third Party Logistics</a></h4>
-                        <p>Long established fact that reader will be distracted by the</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="700">
-                <div class="service-item-three">
-                    <div class="service-image">
-                        <img src="front_asset/images/service/service-17.jpg" alt="Image" />
-                    </div>
-                    <div class="service-content">
-                        <h4><a class="title" href="service-details.html"> Distribution Center</a></h4>
-                        <p>Long established fact that reader will be distracted by the</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="800">
-                <div class="service-item-three">
-                    <div class="service-image">
-                        <img src="front_asset/images/service/service-18.jpg" alt="Image" />
-                    </div>
-                    <div class="service-content">
-                        <h4><a class="title" href="service-details.html"> Train Transportation</a></h4>
-                        <p>Long established fact that reader will be distracted by the</p>
-                    </div>
-                </div>
-            </div>
+            @empty
+                <p class="text-danger">Hech qanday malumot topilmadi</p>
+            @endforelse
+            
+            
         </div>
     </div>
 </section>
