@@ -77,7 +77,7 @@
                                 <img class="p-z-idex" src="front_asset/images/about/ab-1.jpg" alt="Image" />
                             </div>
                             <img class="group-1 p-z-idex" src="front_asset/images/about/ab-2.jpg" alt="Image" />
-                            <img class="group-shape" src="front_asset/images/about/ab-shape.png" alt="Image" />
+                            {{-- <img class="group-shape" src="front_asset/images/about/ab-shape.png" alt="Image" /> --}}
                         </div>
                     </div>
                 </div>
