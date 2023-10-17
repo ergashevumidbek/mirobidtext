@@ -85,7 +85,7 @@
                             
                         </div>
                         <div class="tj-sidebar-widget sidebar-catagory">
-                            <h5 class="details_title">All Catagory</h5>
+                            <h5 class="details_title">Bizning bo'limlar</h5>
                             <ul class="list-gap">
                                 <li>
                                     <a href="#"

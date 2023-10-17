@@ -12,78 +12,29 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="tj-section-heading text-center">
-                        <span class="sub-title active-shape"> Our Workers</span>
-                        <h2 class="title">Our Delivery Team</h2>
+                        <span class="sub-title active-shape"> Guvohnomalar</span>
+                        <h2 class="title"></h2>
                     </div>
                 </div>
             </div>
             <div class="row">
+                @forelse ($sertificates as $value)
                 <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="300">
                     <div class="tj-team-item">
                         <div class="image-box">
-                            <img src="front_asset/images/team/team-1.jpg" alt="Image" />
+                            <img src="{{asset('storage/'.$value->gost_banner_img)}}" alt="Image" />
                         </div>
                         <div class="team-content text-center">
-                            <h4><a class="title-link" href="team-details.html">Kevin Martin</a></h4>
-                            <span class="sub-title"> Co Founder</span>
+                            <h4><a class="title-link" href="team-details.html">{{$value->gost_name}}</a></h4>
+                            {{-- <span class="sub-title"> Co Founder</span> --}}
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="400">
-                    <div class="tj-team-item">
-                        <div class="image-box">
-                            <img src="front_asset/images/team/team-1.jpg" alt="Image" />
-                        </div>
-                        <div class="team-content text-center">
-                            <h4><a class="title-link" href="team-details.html">David Cooper</a></h4>
-                            <span class="sub-title"> Consultant</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="500">
-                    <div class="tj-team-item">
-                        <div class="image-box">
-                            <img src="front_asset/images/team/team-3.jpg" alt="Image" />
-                        </div>
-                        <div class="team-content text-center">
-                            <h4><a class="title-link" href="team-details.html">Kevin Martin</a></h4>
-                            <span class="sub-title"> Co Founder</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="600">
-                    <div class="tj-team-item">
-                        <div class="image-box">
-                            <img src="front_asset/images/team/team-8.jpg" alt="Image" />
-                        </div>
-                        <div class="team-content text-center">
-                            <h4><a class="title-link" href="team-details.html">Kevin Martin</a></h4>
-                            <span class="sub-title"> Co Founder</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="700">
-                    <div class="tj-team-item">
-                        <div class="image-box">
-                            <img src="front_asset/images/team/team-9.jpg" alt="Image" />
-                        </div>
-                        <div class="team-content text-center">
-                            <h4><a class="title-link" href="team-details.html">David Cooper</a></h4>
-                            <span class="sub-title"> Consultant</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="800">
-                    <div class="tj-team-item">
-                        <div class="image-box">
-                            <img src="front_asset/images/team/team-10.jpg" alt="Image" />
-                        </div>
-                        <div class="team-content text-center">
-                            <h4><a class="title-link" href="team-details.html">Kevin Martin</a></h4>
-                            <span class="sub-title"> Co Founder</span>
-                        </div>
-                    </div>
-                </div>
+                @empty
+                    <p class="text-danger">Fsuski hech qanday malumot topilmadi</p>
+                @endforelse
+                
+                
                 <div class="tj-theme-btn text-center">
                     <a class="tj-primary-btn" href="team-details.html">
                         Batafsil <i class="flaticon-right-1"></i>

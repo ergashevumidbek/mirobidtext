@@ -25,8 +25,8 @@
                         <img src="{{asset('storage/'.$value->banner_img)}}" alt="Image" />
                     </div>
                     <div class="service-content">
-                        <h4><a class="title" href="{{route('mirobidtext_news.show', ['mirobidtext_news'=>$value->id])}}">{{$value->news_title}}</a></h4>
-                        <p>{{$value->news_short_content}}</p>
+                        <h5><a class="title" href="{{route('mirobidtext_news.show', ['mirobidtext_news'=>$value->id])}}">{{$value->news_title}}</a></h5>
+                        {{-- <p>{{$value->news_short_content}}</p> --}}
                     </div>
                 </div>
             </div>

@@ -46,32 +46,11 @@
                                 <div class="check-list">
                                     <h3 class="title">{{$value->pro_short_content}}</h3>
                                     
-                                        <p>
                                             {{$value->pro_spesificate}}
-                                        </p>
+                                       
                                     
-                                    <ul class="list-gap">
-                                        <li>
-                                            <i class="fa-light fa-check"></i> Those who do not know how to pursue
-                                        </li>
-                                        <li><i class="fa-light fa-check"></i> Pleasure rationally encounter</li>
-                                        <li>
-                                            <i class="fa-light fa-check"></i> Consequences that are extremely
-                                            painful.
-                                        </li>
-                                        <li>
-                                            <i class="fa-light fa-check"></i> Nor again is there anyone who loves or
-                                            pursues
-                                        </li>
-                                        <li><i class="fa-light fa-check"></i> Service Guarantee</li>
-                                        <li><i class="fa-light fa-check"></i> Excellence in Healthcare every</li>
-                                    </ul>
-                                    <p>
-                                        The languages only differ in their grammar, their pronu nciation and their
-                                        most common words. sometimes by accident, sometimes on purpose. European
-                                        languages are members of the same family european languages are members of
-                                        the same family.
-                                    </p>
+                                    
+                                   
                                 </div>
                             </div>
                         </div>
@@ -82,5 +61,4 @@
             </div>
         </div>
     </section>
-    <!--========== blog details End ==============-->
 @endsection
