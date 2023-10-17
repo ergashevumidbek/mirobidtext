@@ -57,4 +57,5 @@
 <script src="../assets/js/datatable/datatable-extension/dataTables.rowReorder.min.js"></script>
 <script src="../assets/js/datatable/datatable-extension/dataTables.scroller.min.js"></script>
 <script src="../assets/js/datatable/datatable-extension/custom.js"></script>
+<script src="../assets/js/form-wizard/form-wizard.js"></script>
 
