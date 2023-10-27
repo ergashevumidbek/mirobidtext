@@ -12,8 +12,8 @@ use App\Http\Controllers\AuthController;
 
 Route::group(
     [
-        'prefix' => LaravelLocalization::setLocale(),
-        'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
+//        'prefix' => LaravelLocalization::setLocale(),
+//        'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
     ], function(){
     Route::get('/', [PageController::class, 'main_page'])->name('/');
     Route::get('/yangiliklar', [PageController::class, 'yangiliklar'])->name('yangiliklar');
