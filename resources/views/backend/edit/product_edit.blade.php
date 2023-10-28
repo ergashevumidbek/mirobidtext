@@ -74,18 +74,7 @@ Mahsulotlarni taxrirlash
                             <textarea name="pro_label" class="form-control" id="" cols="20" rows="10">{{$mirobidProduct->pro_label}}</textarea>
                           </div>
                         </div>
-                        <div class="col-sm-12">
-                          <div class="card">
-                            <div class="card-header pb-0">
-                              <h4>Mahsulot spetsifikatsiyasi</h4>
-                            </div>
-                            <div class="card-body">
-                              <textarea id="editor1" name="pro_spesificate" cols="30" rows="10">
-                                {{$mirobidProduct->pro_spesificate}}
-                              </textarea>
-                            </div>
-                          </div>
-                        </div>
+
                     </div>
 
                     <div class="row">

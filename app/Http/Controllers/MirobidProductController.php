@@ -36,8 +36,7 @@ class MirobidProductController extends Controller
             'product_type'=>'required',
             'pro_banner_img'=>'required',
             'pro_content_img'=>'required',
-            'pro_label'=>'required',
-            'pro_spesificate'=>'required'
+            'pro_label'=>'required'
         ]);
         $pro_banner_img = $request->file('pro_banner_img')->store('product_img');
         $pro_content_img = $request->file('pro_content_img')->store('product_img');
@@ -47,8 +46,7 @@ class MirobidProductController extends Controller
             'product_type'=>$request->product_type,
             'pro_banner_img'=>$pro_banner_img ?? 'default_img/no_img.jpg',
             'pro_content_img'=>$pro_content_img ?? 'default_img/no_img.jpg',
-            'pro_label'=>$request->pro_label,
-            'pro_spesificate'=>$request->pro_spesificate
+            'pro_label'=>$request->pro_label
         ]);
         $mirobid_pro->save();
         return redirect()->route('mirobid_product.index');
@@ -107,8 +105,8 @@ class MirobidProductController extends Controller
      */
     public function destroy(MirobidProduct $mirobidProduct)
     {
-        if(Storage::exists($mirobidProduct->slayder_img)){
-            Storage::delete($mirobidProduct->slayder_img);
+        if(optional($mirobidProduct->slayder_img)->isNotEmpty()){
+            Storage::disk('public')->delete($mirobidProduct->slayder_img);
         }else{
             dd('File does not exist.');
         }

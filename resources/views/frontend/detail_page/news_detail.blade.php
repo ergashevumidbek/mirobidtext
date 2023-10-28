@@ -1,7 +1,7 @@
 @extends('frontend.layouts.master')
 @section('main_content')
 <section class="bt-5" >
-   
+
 </section>
 
     <!--========== blog details Start ==============-->
@@ -13,7 +13,7 @@
                     <div class="page-details-wrapper">
                         <div class="tj-blog-item-three" >
                             <div class="tj-blog-image" >
-                                <a href="blog-details.html" >
+                                <a href="#" >
                                     <img class="img-fluid" style="width:100%;
                                     height: 516px; object-fit: fill;" src="{{asset('storage/'.$value->banner_img)}}" alt="Blog"
                                 /></a>
@@ -51,13 +51,13 @@
                         </div>
                     </div>
                     @endforeach
-                    
+
                 </div>
 
 
                 <div class="col-lg-4">
                     <div class="details-sidebar-inner">
-                        
+
                         <div class="tj-sidebar-widget sidebar-post">
                             <h5 class="details_title">Eng so'ngi yangiliklar</h5>
                             @foreach ($latest_new as $values)
@@ -81,8 +81,8 @@
                                 </div>
                             </div>
                             @endforeach
-                            
-                            
+
+
                         </div>
                         <div class="tj-sidebar-widget sidebar-catagory">
                             <h5 class="details_title">Bizning bo'limlar</h5>
@@ -125,7 +125,7 @@
                                 </li>
                             </ul>
                         </div>
-                       
+
                     </div>
                 </div>
             </div>

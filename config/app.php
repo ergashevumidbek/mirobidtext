@@ -83,7 +83,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'uz',
 
     /*
     |--------------------------------------------------------------------------
@@ -96,7 +96,7 @@ return [
     |
     */
 
-    'fallback_locale' => 'en',
+    'fallback_locale' => 'uz',
 
     /*
     |--------------------------------------------------------------------------
@@ -182,6 +182,7 @@ return [
     */
 
     'aliases' => Facade::defaultAliases()->merge([
+        'GoogleTranslate'=>Stichoza\GoogleTranslate\GoogleTranslate::class
         // 'Example' => App\Facades\Example::class,
     ])->toArray(),
 

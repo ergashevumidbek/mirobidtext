@@ -2,16 +2,16 @@
 @section('main_content')
      <!--=========== Slider Section Start =========-->
      <section class="tj-slider-section">
-        <div class="slider_shape"><img src="front_asset/images/banner/shape-1.png" alt="Image" /></div>
+{{--        <div class="slider_shape"><img src="front_asset/images/banner/shape-1.png" alt="Image" /></div>--}}
         <div class="swiper sc-slider-1">
             <div class="swiper-wrapper">
                 @foreach ($slide_data as $value)
                 <div class="swiper-slide" data-bg-image="{{asset('storage/'.$value->slayder_img)}}">
                     <div class="container">
                         <div class="slider-content p-z-idex">
-                            <h1 class="slider-title">{{$value->slayder_short_text}}</h1>
+                            <h3 class="text-light">{{$value->slayder_short_text}}</h3>
                             <div class="slider-desc">
-                                {{$value->slayder_main_text}}
+                                {{ucwords($value->slayder_main_text)}}
                             </div>
                             <div class="tj-theme-button">
                                 <a class="tj-transparent-btn" href="contact.html">
@@ -20,7 +20,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="banner-shape"></div>
+{{--                    <div class="banner-shape"></div>--}}
                 </div>
                 @endforeach
             </div>
@@ -83,7 +83,7 @@
             <div class="row">
                 <div class="col-lg-12 position-relative">
                     <div class="tj-theme-button">
-                        <a class="tj-transparent-btn" href="contact.html">
+                        <a class="tj-transparent-btn" href="{{route('biz_haqimizda')}}">
                             Batafsil <i class="flaticon-right-1"></i>
                         </a>
                     </div>

@@ -19,7 +19,6 @@ return new class extends Migration
             $table->string('pro_banner_img',255);
             $table->string('pro_content_img', 255);
             $table->text('pro_label');
-            $table->text('pro_spesificate');
             $table->timestamps();
         });
     }

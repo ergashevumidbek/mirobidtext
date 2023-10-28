@@ -61,7 +61,7 @@ Gost yaratish
                           <label>Gostga tarif</label>
                           <textarea name="gost_label"  class="form-control @error('gost_label')
 
-                          @enderror" height="100px" id="" cols="30" rows="10">value="{{ old('gost_label') }}"</textarea>
+                          @enderror" height="100px" id="" cols="30" rows="10"></textarea>
                           @error('gost_label')
                                 <div class="text-danger">{{ $message }}</div>
                             @enderror

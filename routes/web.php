@@ -10,8 +10,24 @@ use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\SlayderContentController;
 use App\Http\Controllers\AuthController;
 
+Route::group(
+    [
+        'prefix' => LaravelLocalization::setLocale(),
+        'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
+    ], function(){
+    Route::get('/', [PageController::class, 'main_page'])->name('/');
+    Route::get('/yangiliklar', [PageController::class, 'yangiliklar'])->name('yangiliklar');
+    Route::get('/biz_haqimizda', [PageController::class,'biz_haqimizda'])->name('biz_haqimizda');
+    Route::get('/aloqa', [PageController::class, 'aloqa'])->name('aloqa');
+    Route::get('/mahsulotlar', [PageController::class, 'mahsulotlar'])->name('mahsulotlar');
+    Route::get('/guvohnoma/lang/change', [PageController::class, 'guvohnoma'])->name('guvohnoma');
+    Route::get('/yetkazib_berish', [PageController::class, 'yetkazib_berish'])->name('yetkazib_berish');
+// Auth controller
+    Route::post('/authenticate', [AuthController::class, 'authenticate'])->name('authenticate');
+    Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+
+});
 // Backend route
-Route::get('/', [PageController::class, 'main_page'])->name('/');
 Route::get('/login', [PageController::class, 'login'])->name('login');
 Route::get('/dashboard', [PageController::class, 'dashboard'])->name('dashboard');
 Route::get('/mirobidtex_news', [PageController::class, 'mirobidtex_news'])->name('mirobidtex_news');
@@ -38,12 +54,4 @@ Route::resource('sertificate', SertificateController::class);
 Route::resource('gallery', GalleryController::class);
 Route::resource('slayder_content', SlayderContentController::class);
 //Frontend route
-Route::get('/yangiliklar', [PageController::class, 'yangiliklar'])->name('yangiliklar');
-Route::get('/biz_haqimizda', [PageController::class,'biz_haqimizda'])->name('biz_haqimizda');
-Route::get('/aloqa', [PageController::class, 'aloqa'])->name('aloqa');
-Route::get('/mahsulotlar', [PageController::class, 'mahsulotlar'])->name('mahsulotlar');
-Route::get('/guvohnoma', [PageController::class, 'guvohnoma'])->name('guvohnoma');
-Route::get('/yetkazib_berish', [PageController::class, 'yetkazib_berish'])->name('yetkazib_berish');
-// Auth controller 
-Route::post('/authenticate', [AuthController::class, 'authenticate'])->name('authenticate');
-Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+

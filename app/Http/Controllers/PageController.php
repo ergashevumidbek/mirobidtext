@@ -82,7 +82,8 @@ class PageController extends Controller
         return view('frontend.news')->with(['new_collaction' => $new_collaction]);
     }
     public function biz_haqimizda(){
-        return view('frontend.about_us');
+        $staff = MirobidStaff::all();
+        return view('frontend.about_us')->with(['staff' => $staff]);
     }
     public function aloqa(){
         return view('frontend.contact');
@@ -101,5 +102,5 @@ class PageController extends Controller
     public function login(){
         return view('auth.login');
     }
-   
+
 }

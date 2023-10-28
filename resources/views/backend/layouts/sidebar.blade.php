@@ -26,7 +26,7 @@
             <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="{{route('sertificate.index')}}"><i data-feather="book"></i><span>Guvohnomalar</span></a></li>
             <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="{{route('gallery.index')}}"><i data-feather="monitor"> </i><span>Galeriya</span></a></li>
             <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="{{route('slayder_content.index')}}"><i data-feather="book"></i><span>Slayder</span></a></li>
-            {{-- {{-- <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="{{route('benefit_table')}}"><i data-feather="monitor"> </i><span>Kirim-chiqim</span></a></li> --}}
+             <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="#"><i data-feather="monitor"> </i><span>Tarjima</span></a></li>
             {{-- <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="{{route('avtomobillar')}}"><i data-feather="activity"></i><span>Avtomobillar</span></a></li> --}}
                 {{-- {{--<li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="kanban.html"><i data-feather="monitor"> </i><span>SMS xizmati</span></a></li> --}}
             {{-- <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="kanban.html"><i data-feather="monitor"> </i><span>Talabalar ro'yhati</span></a></li> --}}

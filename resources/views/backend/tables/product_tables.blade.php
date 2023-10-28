@@ -35,7 +35,9 @@ Mahsulotlar
                         <td>{{$value->product_name}}</td>
                         <td>{{$value->pro_short_content}} </td>
                         <td>{{$value->product_type}} </td>
-                        <td><img class="img-fluid table-avtar" src="{{asset('storage/'. $value->pro_banner_img)}}" alt=""></td>
+                        <td>
+                            <img class="img-fluid table-avtar" src="{{asset('storage/'. $value->pro_banner_img)}}" alt="">
+                        </td>
                         <td>
                             <img class="img-fluid table-avtar" src="{{asset('storage/'. $value->pro_content_img)}}" alt="">
                         </td>

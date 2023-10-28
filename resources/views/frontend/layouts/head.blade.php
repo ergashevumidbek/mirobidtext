@@ -34,4 +34,5 @@
     <link rel="stylesheet" href="{{asset('front_asset/css/style.css')}}" />
     <!-- Responsive css -->
     <link rel="stylesheet" href="{{asset('front_asset/css/responsive.css')}}" />
+
 </head>

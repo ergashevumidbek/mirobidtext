@@ -1,11 +1,19 @@
 @extends('frontend.layouts.master')
 @section('main_content')
-   <!--========== breadcrumb Start ==============-->
-   <section style="margin-bottom: 60px">
-   
-   </section>
-<!--========== breadcrumb End ==============-->
-
+    <!--========== breadcrumb Start ==============-->
+    <section class="breadcrumb-wrapper" data-bg-image="assets/images/slider/slider-1.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-content">
+                        <h1 class="breadcrumb-title text-center">Yangiliklar</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--========== breadcrumb End ==============-->
+{{--'GoogleTranslate'=>Stichoza\GoogleTranslate\GoogleTranslate::class--}}
 <!--========== Service Section Start ==============-->
 <section class="tj-service-section-four tj-service-page">
     <div class="container">
@@ -13,7 +21,7 @@
             <div class="col-lg-12">
                 <div class="tj-section-heading text-center">
                     <span class="sub-title active-shape"> Mirobid tex</span>
-                    <h3 class="">Korxona yangiliklari</h3>
+                    <h4 class="">Korxona yangiliklari</h4>
                 </div>
             </div>
         </div>
@@ -33,8 +41,8 @@
             @empty
                 <p class="text-danger">Hech qanday malumot topilmadi</p>
             @endforelse
-            
-            
+
+
         </div>
     </div>
 </section>

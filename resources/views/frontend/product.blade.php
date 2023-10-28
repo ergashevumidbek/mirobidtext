@@ -1,8 +1,16 @@
 @extends('frontend.layouts.master')
 @section('main_content')
     <!--========== breadcrumb Start ==============-->
-    <section style="margin-bottom: 60px">
-        
+    <section class="breadcrumb-wrapper" data-bg-image="assets/images/slider/slider-1.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-content">
+                        <h1 class="breadcrumb-title text-center">Service Details</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <!--========== breadcrumb End ==============-->
 
@@ -35,8 +43,8 @@
                         @empty
                             <p class="text-danger">Afsuski hech qanday malumot topilmadi</p>
                         @endforelse
-                        
-                        
+
+
                     </div>
                     <div class="tj-theme-btn text-center">
                         <a class="tj-primary-btn" href="project-details.html">

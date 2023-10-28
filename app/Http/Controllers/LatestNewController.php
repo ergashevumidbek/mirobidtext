@@ -31,7 +31,6 @@ class LatestNewController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request);
         $request->validate([
             'news_title'=>'required',
             'news_short_content'=>'required',
@@ -62,10 +61,10 @@ class LatestNewController extends Controller
     {
         $latest_news = LatestNew::find($mirobidtext_news);
         $latest_new = DB::table('latest_news')->latest()->limit(3)->get();
-      
+
         return view('frontend.detail_page.news_detail')
         ->with([
-        'latest_news'=>$latest_news, 
+        'latest_news'=>$latest_news,
         'latest_new'=>$latest_new
     ]);
     }

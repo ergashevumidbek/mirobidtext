@@ -7,7 +7,7 @@
         <!-- Preloader start -->
 
         <!-- Preloader end -->
-        @include('frontend.layouts.loader')
+{{--         @include('frontend.layouts.loader')--}}
         <!-- Offcanvas Area Start-->
 
         <!-- Offcanvas Area End-->

@@ -8,6 +8,8 @@
         $this.css("background-image", "url(" + $image + ")");
     });
 
+
+
     // Preloader
     function loading() {
         document.querySelectorAll(".bar").forEach(function (current) {
@@ -77,7 +79,7 @@
         });
     }
 
-    
+
     // header language
     $(".languages .activated").html($(".lang_lists > li.active a").html());
     var newOptions = $(".lang_lists > li a");
@@ -92,7 +94,7 @@
         $(".lang_lists").slideToggle();
         $(this).toggleClass("open");
     });
-    
+
 
     // Hero Slider One
     var slider1 = new Swiper(".sc-slider-1", {
