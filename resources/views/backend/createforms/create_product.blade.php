@@ -58,7 +58,9 @@ Mahsulotlarni yaratish
                               <option value="Toqilmagan mato"> To'qilmagan mato</option>
                               <option value="Vafli mato">Vafli mato</option>
                               <option value="Vata prima">Vata prima</option>
-                              <option value="Teri sochiqlar">Teri sochiqlar</option>
+                                <option value="Teri sochiqlar">Teri sochiqlar</option>
+                                <option value="Supurgilar">Supurgilar</option>
+                                <option value="Doka">Doka</option>
                             </select>
                             @error('product_type')
                                 <div class="text-danger">{{ $message }}</div>

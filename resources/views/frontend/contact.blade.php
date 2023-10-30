@@ -1,12 +1,15 @@
 @extends('frontend.layouts.master')
 @section('main_content')
+    @section('title')
+        Bog'lanish
+    @endsection
     <!--========== breadcrumb Start ==============-->
-    <section class="breadcrumb-wrapper" data-bg-image="assets/images/slider/slider-1.jpg">
+    <section class="breadcrumb-wrapper" data-bg-image="{{asset('assets/images/slider/slider-1.jpg')}}">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumb-content">
-                        <h1 class="breadcrumb-title text-center">Service Details</h1>
+                        <h1 class="breadcrumb-title text-center">Biz bilan bog'laning</h1>
                     </div>
                 </div>
             </div>

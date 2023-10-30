@@ -20,16 +20,23 @@ Route::group(
     Route::get('/biz_haqimizda', [PageController::class,'biz_haqimizda'])->name('biz_haqimizda');
     Route::get('/aloqa', [PageController::class, 'aloqa'])->name('aloqa');
     Route::get('/mahsulotlar', [PageController::class, 'mahsulotlar'])->name('mahsulotlar');
-    Route::get('/guvohnoma/lang/change', [PageController::class, 'guvohnoma'])->name('guvohnoma');
+    Route::get('/guvohnoma', [PageController::class, 'guvohnoma'])->name('guvohnoma');
     Route::get('/yetkazib_berish', [PageController::class, 'yetkazib_berish'])->name('yetkazib_berish');
 // Auth controller
     Route::post('/authenticate', [AuthController::class, 'authenticate'])->name('authenticate');
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+//    products
+    Route::get('/toqilmagan_mato', [PageController::class, 'toqilmagan_mato'])->name('toqilmagan_mato');
+    Route::get('/vafli_mato', [PageController::class, 'vafli_mato'])->name('vafli_mato');
+    Route::get('/teri_sochiqlar', [PageController::class, 'teri_sochiqlar'])->name('teri_sochiqlar');
+    Route::get('/vata_prima', [PageController::class, 'vata_prima'])->name('vata_prima');
+    Route::get('/supurgilar', [PageController::class, 'supurgilar'])->name('supurgilar');
+    Route::get('/doka', [PageController::class, 'doka'])->name('doka');
 
 });
 // Backend route
 Route::get('/login', [PageController::class, 'login'])->name('login');
-Route::get('/dashboard', [PageController::class, 'dashboard'])->name('dashboard');
+Route::get('/dashboards', [PageController::class, 'dashboards'])->name('dashboards');
 Route::get('/mirobidtex_news', [PageController::class, 'mirobidtex_news'])->name('mirobidtex_news');
 Route::get('/products', [PageController::class, 'products'])->name('products');
 Route::get('/staffes_table', [PageController::class, 'staffes_table'])->name('staffes_table');

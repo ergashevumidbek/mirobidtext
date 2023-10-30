@@ -19,7 +19,7 @@
             <hr>
 
 
-            <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="{{route('dashboard')}}"><i data-feather="git-pull-request"> </i><span>Boshqaruv</span></a></li>
+            <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="{{route('dashboards')}}"><i data-feather="git-pull-request"> </i><span>Boshqaruv</span></a></li>
             <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="{{route("mirobidtext_news.index")}}"><i data-feather="users"></i><span>Yangiliklar </span></a></li>
             <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="{{route("mirobid_product.index")}}"><i data-feather="user"></i> </i><span>Mahsulotlar </span></a></li>
             <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="{{route('mirobid_staff.index')}}"><i data-feather="monitor"> </i><span>Hodimlar</span></a></li>

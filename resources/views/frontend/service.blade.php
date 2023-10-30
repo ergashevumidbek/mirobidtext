@@ -1,17 +1,20 @@
 @extends('frontend.layouts.master')
 @section('main_content')
+    @section('title')
+        Xizmatlar
+    @endsection
     <!--========== breadcrumb Start ==============-->
-{{--    <section class="breadcrumb-wrapper" data-bg-image="assets/images/slider/slider-1.jpg">--}}
-{{--        <div class="container">--}}
-{{--            <div class="row">--}}
-{{--                <div class="col-lg-12">--}}
-{{--                    <div class="breadcrumb-content">--}}
-{{--                        <h1 class="breadcrumb-title text-center">Service Details</h1>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </section>--}}
+    <section class="breadcrumb-wrapper" data-bg-image="{{asset('assets/images/slider/slider-1.jpg')}}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-content">
+                        <h1 class="breadcrumb-title text-center">Service Details</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!--========== breadcrumb End ==============-->
     <!--=========== Feature Section Start =========-->
     <section class="tj-choose-us-section">
@@ -29,7 +32,7 @@
                     <div class="choose-us-content-1">
                         <div class="tj-section-heading">
                             <span class="sub-title active-shape2"> Xizmatlar</span>
-                            <h2 class="title">Kompaniyaning butun dunyo bo'ylab transport va ekspeditorlik xizmatlari</h2>
+                            <h2 class="title text-dark">Kompaniyaning butun dunyo bo'ylab transport va ekspeditorlik xizmatlari</h2>
 {{--                            <p class="desc">--}}
 {{--                                Quisque dignissim enim diam, eget pulvinar ex viverra id. Nulla a lobortis lectus,--}}
 {{--                                id volutpat magna. Morbi consequat porttitor--}}
@@ -170,7 +173,7 @@
             <div class="col-lg-6" data-sal="slide-left" data-sal-duration="800">
                 <div class="tj-faq-left-content">
                     <div class="faq-image">
-                        <img src="front_asset/images/slider/slider-2.jpg" alt="Image" />
+                        <img src="{{asset('front_asset/images/slider/slider-2.jpg')}}" alt="Image" />
                     </div>
                     <div class="faq-content">
                         <div class="faq-icon">

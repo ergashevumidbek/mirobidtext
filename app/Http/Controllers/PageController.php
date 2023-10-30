@@ -21,12 +21,12 @@ class PageController extends Controller
             'product' => $product
     ]);
     }
-    public function dashboard(){
+    public function dashboards(){
         $mirobid_news = LatestNew::all()->count();
         $mirobid_pro = MirobidProduct::all()->count();
         $gallery = Gallery::all()->count();
         $staff = MirobidStaff::all()->count();
-        return view('backend.createforms.dashboard')->with([
+        return view('backend.createforms.dashboards')->with([
             'mirobid_news'=>$mirobid_news,
             'mirobid_pro'=>$mirobid_pro,
             'gallery'=>$gallery,
@@ -36,8 +36,27 @@ class PageController extends Controller
     public function mirobidtex_news(){
         return view('backend.tables.news_tables');
     }
+//    products all
     public function products(){
         return view('backend.tables.product_tables');
+    }
+    public function toqilmagan_mato(){
+        return view('frontend.products.toqilmagan_mato');
+    }
+    public function vafli_mato() {
+        return view('frontend.products.vafli_mato');
+    }
+    public function teri_sochiqlar(){
+        return view('frontend.products.teri_sochiq');
+    }
+    public function vata_prima() {
+        return view('frontend.products.vata_prima');
+    }
+    public function supurgilar() {
+        return view('frontend.products.supurgi');
+    }
+    public function doka() {
+        return view('frontend.products.doka');
     }
     public function staffes_table(){
         return view('backend.tables.staff_tables');

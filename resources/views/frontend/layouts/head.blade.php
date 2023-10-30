@@ -1,7 +1,7 @@
 <head>
     <!-- Meta Tag -->
     <meta charset="utf-8" />
-    <title>MIROBID tekistil</title>
+    <title>@yield('title')</title>
     <meta name="description" content="" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />

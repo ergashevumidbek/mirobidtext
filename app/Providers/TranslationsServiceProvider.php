@@ -17,7 +17,7 @@ class TranslationsServiceProvider extends LaravelTranslationsApplicationServiceP
             Gate::define('viewLaravelTranslationsUI', function (User $user) {
 
                 return in_array($user->email, [
-                    //
+                    'translator', 'translation.loader'
                 ]);
         });
     }
