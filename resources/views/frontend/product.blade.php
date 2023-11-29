@@ -9,7 +9,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumb-content">
-                        <h1 class="breadcrumb-title text-center">Kompaniya mahsulotlari</h1>
+                        <h1 class="breadcrumb-title text-center">Продукция компании</h1>
                     </div>
                 </div>
             </div>
@@ -22,33 +22,33 @@
         <div class="container">
             <div class="row">
                 <div class="tj-section-heading text-center">
-                    <span class="sub-title active-shape"> Mirobidtex</span>
-                    <h4 class="">Bizning mahsulotlar</h4>
+                    <span class="sub-title active-shape"> Миробидтекс</span>
+                    <h4 class="">Наши продукты</h4>
                 </div>
             </div>
             <div class="row">
                         @forelse ($product_list as $value)
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp my-3" data-wow-delay="0.3s">
                         <div class="package-item">
-                            <div class="overflow-hidden">
-                                <img class="img-fluid" src="{{asset('storage/'.$value->pro_banner_img)}}" alt="">
+                            <div class="overflow-hidden" style="height: 280px;">
+                                <img class="img-fluid" src="{{asset('storage/'.$value->pro_banner_img)}}" alt="" >
                             </div>
 
                             <div class="text-start p-2">
 
                                 <a style="color: var(--tj-primary-color);" href="{{route('mirobid_product.show', ['mirobid_product'=>$value->id])}}">{{$value->product_name}}</a>
-                                <p style="width: 270px;  overflow: hidden;  text-overflow: ellipsis;">{{$value->pro_short_content}}</p>
+                                <p style="width: 270px; height: 50px;  overflow: hidden;  text-overflow: ellipsis; font-size: 16px;">{{$value->pro_short_content}}</p>
                             </div>
                         </div>
                     </div>
                         @empty
-                            <p class="text-danger">Afsuski hech qanday malumot topilmadi</p>
+                            <p class="text-danger">К сожалению, никакой информации не найдено</p>
                         @endforelse
-                    <div class="tj-theme-btn text-center">
-                        <a class="tj-primary-btn" href="project-details.html">
-                            Ko'proq <i class="flaticon-right-1"></i>
-                        </a>
-                    </div>
+{{--                    <div class="tj-theme-btn text-center">--}}
+{{--                        <a class="tj-primary-btn" href="project-details.html">--}}
+{{--                            Ko'proq <i class="flaticon-right-1"></i>--}}
+{{--                        </a>--}}
+{{--                    </div>--}}
 {{--                </div>--}}
             </div>
         </div>

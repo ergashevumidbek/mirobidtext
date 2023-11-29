@@ -115,8 +115,8 @@ class LatestNewController extends Controller
      */
     public function destroy(LatestNew $mirobidtext_news)
     {
-        if(Storage::exists($mirobidtext_news->slayder_img)){
-            Storage::delete($mirobidtext_news->slayder_img);
+        if(Storage::exists($mirobidtext_news->news_banner_img)){
+            Storage::delete($mirobidtext_news->news_banner_img);
             /*
                 Delete Multiple files this way
                 Storage::delete(['upload/test.png', 'upload/test2.png']);

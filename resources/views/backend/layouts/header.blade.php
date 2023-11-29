@@ -46,10 +46,10 @@
                 </form>
                 {{-- <a href="{{route('dashboard')}}"><i data-feather="log-in"> </i><span>Profile</span></a> --}}
                 @else
-                <a href="{{route('dashboard')}}"><i data-feather="log-in"> </i><span>Setting</span></a>
-                
+                <a href="{{route('dashboards')}}"><i data-feather="log-in"> </i><span>Setting</span></a>
+
                 @endauth
-                
+
               </li>
             </ul>
           </li>

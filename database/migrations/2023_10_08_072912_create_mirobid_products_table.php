@@ -17,8 +17,12 @@ return new class extends Migration
             $table->string('pro_short_content',255);
             $table->text('product_type',255);
             $table->string('pro_banner_img',255);
-            $table->string('pro_content_img', 255);
+            $table->string('pro_content_img_1', 255);
+            $table->string('pro_content_img_2', 255);
+            $table->string('pro_content_img_3', 255);
+            $table->string('pro_content_img_4', 255);
             $table->text('pro_label');
+            $table->text('spetsification');
             $table->timestamps();
         });
     }

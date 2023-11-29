@@ -21,7 +21,8 @@ class GalleryController extends Controller
      */
     public function create()
     {
-        //
+        $gallery_post = Gallery::all();
+        return view('frontend.gallery')->with('gallery_post', $gallery_post);
     }
 
     /**
@@ -46,7 +47,8 @@ class GalleryController extends Controller
 
     public function show(Gallery $gallery)
     {
-        //
+        $gallery_post = Gallery::find($gallery);
+        return view('frontend.gallery')->with(['gallery_post'=>$gallery_post]);
     }
 
     /**

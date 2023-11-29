@@ -26,3 +26,4 @@
 <script src="{{asset('front_asset/js/jquery.nice-select.min.js')}}"></script>
 <!-- Main JS -->
 <script src="{{asset('front_asset/js/main.js')}}"></script>
+

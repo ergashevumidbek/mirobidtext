@@ -27,7 +27,7 @@
                             <i class="flaticon-phone-call"></i>
                         </div>
                         <div class="contact-header">
-                            <span> Bog'lanish uchun</span>
+                            <span>Связаться</span>
                             <a href="tel:+998-(90)-275-0007"> +998-(90)-275-0007</a>
                         </div>
                     </div>
@@ -38,7 +38,7 @@
                             <i class="flaticon-email-3"></i>
                         </div>
                         <div class="contact-header">
-                            <span> Elektron pochta</span>
+                            <span> Электронная почта</span>
                             <a href="mirobid.tex@mail.ru"> mirobid.tex@mail.ru</a>
                         </div>
                     </div>
@@ -49,10 +49,10 @@
                             <i class="flaticon-map"></i>
                         </div>
                         <div class="contact-header">
-                            <span> Bizning manzil</span>
+                            <span> Наш адрес</span>
 
 
-                            <p> Namangan shahri, Polikovskaya ko'chasi 42-uy</p>
+                            <p> г.Наманган, улица Поликовская 42</p>
                         </div>
                     </div>
                 </div>
@@ -61,7 +61,7 @@
                 <div class="col-lg-7" style="margin-top: -318px;">
                     <div class="tj-section-heading">
                         <span class="sub-title active-shape"></span>
-                        <h3 class="title">Biz bilan bog'lanish</h3>
+                        <h3 class="title">Cвязаться с нами</h3>
                     </div>
                     <div class="tj-animate-form d-flex align-items-center">
                         <form class="animate-form">
@@ -69,19 +69,19 @@
                                 <div class="col-lg-6 col-md-6">
                                     <div class="form__div">
                                         <input type="text" class="form__input" placeholder=" " />
-                                        <label class="form__label">Ism</label>
+                                        <label class="form__label">Имя</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6">
                                     <div class="form__div">
                                         <input type="text" class="form__input" placeholder=" " />
-                                        <label class="form__label">Familya</label>
+                                        <label class="form__label">Семья</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form__div">
                                         <input type="text" class="form__input" placeholder=" " />
-                                        <label class="form__label"> Email Address</label>
+                                        <label class="form__label"> Адрес электронной почты</label>
                                     </div>
                                 </div>
 
@@ -89,13 +89,13 @@
                                 <div class="col-lg-12">
                                     <div class="form__div">
                                         <input type="text" class="form__input textarea" placeholder=" " />
-                                        <label class="form__label"> Habar</label>
+                                        <label class="form__label"> Cообщение</label>
                                     </div>
                                 </div>
                             </div>
                             <div class="tj-theme-button">
                                 <button class="tj-primary-btn contact-btn" type="submit" value="submit">
-                                    Yuborish <i class="flaticon-right-1"></i>
+                                    Отправка <i class="flaticon-right-1"></i>
                                 </button>
                             </div>
                         </form>

@@ -9,7 +9,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumb-content">
-                        <h1 class="breadcrumb-title text-center">Yangiliklar</h1>
+                        <h1 class="breadcrumb-title text-center">Новости</h1>
                     </div>
                 </div>
             </div>
@@ -23,8 +23,8 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="tj-section-heading text-center">
-                    <span class="sub-title active-shape"> Mirobid tex</span>
-                    <h4 class="">Korxona yangiliklari</h4>
+                    <span class="sub-title active-shape"> Миробид тех</span>
+                    <h4 class="">Новости компании</h4>
                 </div>
             </div>
         </div>
@@ -42,7 +42,7 @@
                 </div>
             </div>
             @empty
-                <p class="text-danger">Hech qanday malumot topilmadi</p>
+                <p class="text-danger">Информация не найдена</p>
             @endforelse
 
 

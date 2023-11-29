@@ -79,29 +79,77 @@ Mahsulotlarni yaratish
 
                         <div class="col-sm-4">
                           <div class="mb-3">
-                            <label>Kontent rasm (bir nechta)</label>
-                            <input class=" form-control @error('pro_content_img') is-invalid  @enderror" name="pro_content_img" type="file" >
-                            @error('pro_content_img')
+                            <label>Kontent rasm-1 </label>
+                            <input class=" form-control @error('pro_content_img_1') is-invalid  @enderror" name="pro_content_img_1"   type="file" >
+                            @error('pro_content_img_1')
                                 <div class="text-danger">{{ $message }}</div>
                             @enderror
                           </div>
                         </div>
-                    </div>
-                    <div class="row">
-                      <div class="col">
-                          <div class="mb-3">
-                            <label>Mahsulotga tarif</label>
-                            <textarea name="pro_label" class="form-control @error('pro_label') is-invalid  @enderror" id="" cols="20" rows="10">{{ old('pro_label') }}</textarea>
-                            @error('pro_label')
+                        <div class="col-sm-4">
+                            <div class="mb-3">
+                                <label>Kontent rasm-2 </label>
+                                <input class=" form-control @error('pro_content_img_2') is-invalid  @enderror" name="pro_content_img_2"   type="file" >
+                                @error('pro_content_img_2')
                                 <div class="text-danger">{{ $message }}</div>
-                            @enderror
-                          </div>
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="mb-3">
+                                <label>Kontent rasm-3 </label>
+                                <input class=" form-control @error('pro_content_img_3') is-invalid  @enderror" name="pro_content_img_3"   type="file" >
+                                @error('pro_content_img_3')
+                                <div class="text-danger">{{ $message }}</div>
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="mb-3">
+                                <label>Kontent rasm-4 </label>
+                                <input class=" form-control @error('pro_content_img_4') is-invalid  @enderror" name="pro_content_img_4"   type="file" >
+                                @error('pro_content_img_4')
+                                <div class="text-danger">{{ $message }}</div>
+                                @enderror
+                            </div>
                         </div>
                     </div>
-
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="card">
+                                <div class="card-header pb-0">
+                                    <h4>Mahsulotga tarif</h4>
+                                </div>
+                                <div class="card-body">
+                                    <textarea id="editor2" name="pro_label" cols="30" rows="10"></textarea>
+                                </div>
+                            </div>
+                        </div>
+{{--                      <div class="col">--}}
+{{--                          <div class="mb-3">--}}
+{{--                            <label>Mahsulotga tarif</label>--}}
+{{--                            <textarea name="pro_label" class="form-control @error('pro_label') is-invalid  @enderror" id="" cols="20" rows="10">{{ old('pro_label') }}</textarea>--}}
+{{--                            @error('pro_label')--}}
+{{--                                <div class="text-danger">{{ $message }}</div>--}}
+{{--                            @enderror--}}
+{{--                          </div>--}}
+{{--                        </div>--}}
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="card">
+                            <div class="card-header pb-0">
+                                <h4>Mahsulot spetsifikatsiyasi</h4>
+                            </div>
+                            <div class="card-body">
+                            <textarea id="editor1" name="spetsification" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                    </div>
                     <div class="row">
                       <div class="col">
-                        <div class="text-end"><input type="submit" value="Saqlash" class="btn btn-success me-3"><a class="btn btn-danger" href="{{route('mirobid_product.index')}}">Bekor qilish</a></div>
+                        <div class="text-end">
+                            <input type="submit" value="Saqlash" class="btn btn-success me-3">
+                            <a class="btn btn-danger" href="{{route('mirobid_product.index')}}">Bekor qilish</a></div>
                       </div>
                     </div>
                   </div>

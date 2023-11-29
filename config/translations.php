@@ -11,7 +11,7 @@ return [
     | translations from the files.
     |
     */
-    'source_language' => env('TRANSLATIONS_SOURCE_LANGUAGE', 'en'),
+    'source_language' => env('TRANSLATIONS_SOURCE_LANGUAGE', 'ru'),
 
     /*
     |--------------------------------------------------------------------------

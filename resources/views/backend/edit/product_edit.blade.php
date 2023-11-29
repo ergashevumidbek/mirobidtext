@@ -62,19 +62,56 @@ Mahsulotlarni taxrirlash
 
                         <div class="col-sm-4">
                           <div class="mb-3">
-                            <label>Kontent rasm (bir nechta)</label>
-                            <input class=" form-control" name="pro_content_img" type="file" >
+                            <label>Kontent rasm-1</label>
+                            <input class=" form-control" name="pro_content_img_1" type="file" >
                           </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="mb-3">
+                                <label>Kontent rasm-2</label>
+                                <input class=" form-control" name="pro_content_img_2" type="file" >
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="mb-3">
+                                <label>Kontent rasm-3</label>
+                                <input class=" form-control" name="pro_content_img_3" type="file" >
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="mb-3">
+                                <label>Kontent rasm-4</label>
+                                <input class=" form-control" name="pro_content_img_4" type="file" >
+                            </div>
                         </div>
                     </div>
                     <div class="row">
-                      <div class="col">
-                          <div class="mb-3">
-                            <label>Mahsulotga tarif</label>
-                            <textarea name="pro_label" class="form-control" id="" cols="20" rows="10">{{$mirobidProduct->pro_label}}</textarea>
-                          </div>
+                        <div class="col-sm-12">
+                            <div class="card">
+                                <div class="card-header pb-0">
+                                    <h4>Mahsulotga tarif</h4>
+                                </div>
+                                <div class="card-body">
+                                    <textarea id="editor2" name="pro_label" cols="30" rows="10">{{$mirobidProduct->pro_label}}</textarea>
+                                </div>
+                            </div>
                         </div>
-
+{{--                      <div class="col">--}}
+{{--                          <div class="mb-3">--}}
+{{--                            <label>Mahsulotga tarif</label>--}}
+{{--                            <textarea name="pro_label" class="form-control" id="" cols="20" rows="10">{{$mirobidProduct->pro_label}}</textarea>--}}
+{{--                          </div>--}}
+{{--                        </div>--}}
+                        <div class="col-sm-12">
+                            <div class="card">
+                                <div class="card-header pb-0">
+                                    <h4>Mahsulot spetsifikatsiyasi</h4>
+                                </div>
+                                <div class="card-body">
+                                    <textarea id="editor1" name="spetsification" cols="30" rows="10">{!! $mirobidProduct->spetsification !!}</textarea>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="row">

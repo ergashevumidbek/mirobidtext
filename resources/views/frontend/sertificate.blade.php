@@ -9,7 +9,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumb-content">
-                        <h1 class="breadcrumb-title text-center">Gost</h1>
+                        <h1 class="breadcrumb-title text-center">Cертификат</h1>
                     </div>
                 </div>
             </div>
@@ -23,7 +23,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="tj-section-heading text-center">
-                        <span class="sub-title active-shape"> Guvohnomalar</span>
+                        <span class="sub-title active-shape"> Cертификат</span>
                         <h2 class="title"></h2>
                     </div>
                 </div>
@@ -42,15 +42,9 @@
                     </div>
                 </div>
                 @empty
-                    <p class="text-danger">Fsuski hech qanday malumot topilmadi</p>
+                    <p class="text-danger">К сожалению, никакой информации не найдено</p>
                 @endforelse
 
-
-                <div class="tj-theme-btn text-center">
-                    <a class="tj-primary-btn" href="#">
-                        Batafsil <i class="flaticon-right-1"></i>
-                    </a>
-                </div>
             </div>
         </div>
     </section>

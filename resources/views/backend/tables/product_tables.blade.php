@@ -34,12 +34,12 @@ Mahsulotlar
                         <td>{{$value->id}}</td>
                         <td>{{$value->product_name}}</td>
                         <td>{{$value->pro_short_content}} </td>
-                        <td>{{$value->product_type}} </td>
+                        <td>{!! $value->spetsification !!} </td>
                         <td>
                             <img class="img-fluid table-avtar" src="{{asset('storage/'. $value->pro_banner_img)}}" alt="">
                         </td>
                         <td>
-                            <img class="img-fluid table-avtar" src="{{asset('storage/'. $value->pro_content_img)}}" alt="">
+                            <img class="img-fluid table-avtar" src="{{asset('storage/'. $value->pro_content_img_1)}}" alt="">
                         </td>
                         <td>{{$value->created_at}}</td>
                         <td>

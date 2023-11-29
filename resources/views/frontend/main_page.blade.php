@@ -5,25 +5,22 @@
     @endsection
      <!--=========== Slider Section Start =========-->
      <section class="tj-slider-section">
-{{--        <div class="slider_shape"><img src="front_asset/images/banner/shape-1.png" alt="Image" /></div>--}}
-        <div class="swiper sc-slider-1">
-            <div class="swiper-wrapper">
+        <div class="swiper sc-slider-1" data-bs-interval="10000">
+            <div class="swiper-wrapper" >
                 @foreach ($slide_data as $value)
-                <div class="swiper-slide" data-bg-image="{{asset('storage/'.$value->slayder_img)}}">
+                <div class="swiper-slide" style="height: 720px;"  data-bg-image="{{asset('storage/'.$value->slayder_img)}}">
                     <div class="container">
-                        <div class="slider-content p-z-idex">
+                        <div class="slider-content p-z-index">
                             <h3 class="text-light">{{$value->slayder_short_text}}</h3>
                             <div class="slider-desc">
-                                {{ucwords($value->slayder_main_text)}}
                             </div>
                             <div class="tj-theme-button">
-                                <a class="tj-transparent-btn" href="contact.html">
-                                    Batafsil <i class="flaticon-right-1"></i>
+                                <a class="tj-transparent-btn" href="{{route('biz_haqimizda')}}">
+                                   O Kомпания <i class="flaticon-right-1"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
-{{--                    <div class="banner-shape"></div>--}}
                 </div>
                 @endforeach
             </div>
@@ -40,25 +37,24 @@
                  <div class="col-lg-6" >
                      <div class="about-content-one">
                          <div class="tj-section-heading">
-                             <span class="sub-title active-shape"> MChJ "Mirobid Textile"</span>
-                             <h2 class="title">Bizning korxonamiz yillar davomida mijozlar ko'nglidan joy egallab kelmoqda</h2>
+                             <span class="sub-title active-shape"> МЧЖ "МИРОБИД ТЕХТИЛЕ"</span>
+                             <h2 class="title">Наша компания уже много лет в сердцах клиентов</h2>
                              <p class="desc">
-                                 Quisque dignissim enim diam, eget pulvinar ex viverra id. Nulla a lobortis lectus,
-                                 id volutpat magna. Morbi consequat porttitor fermentum. Nulla vestibulum tincidunt
-                                 viverra. Vestibulum accumsan
+                                 Современные методы организации труда, продуманная техническая и кадровая политика позволяют ООО «Миробид Текстиль» предлагать потребителям более низкие цены, чем у конкурентов,
+                                 позволяет сократить сроки поставки индивидуальных заказов и обеспечить высокую гарантию качества.
                              </p>
                          </div>
                          <div class="tj-icon-box">
                              <div class="ab-text d-flex align-items-center">
                                  <div class="ab-icon">
-                                     <img src="front_asset/images/icon/global.svg" alt="Icon" />
+                                     <img src="{{asset('front_asset/images/icon/global.svg')}}" alt="Icon" />
                                  </div>
                                  <div class="ab-title">
-                                     <h5 class="title">Butun Osiyo bo'ylab</h5>
+                                     <h5 class="title">По всей Азии</h5>
                                  </div>
                              </div>
                              <p class="desc">
-                                 Mahsulotlarimiz yetkazib beriladi<br />
+                                 Наша продукция доставляется<br />
 
                              </p>
                          </div>
@@ -68,17 +64,17 @@
                                      <img src="front_asset/images/icon/winner.svg" alt="Icon" />
                                  </div>
                                  <div class="ab-title">
-                                     <h5 class="title">Guvohnoma va mukofotlar</h5>
+                                     <h5 class="title">Сертификат и награды</h5>
                                  </div>
                              </div>
                              <p class="desc">
-                                 Bizning mahsulotlarimiz davlat va jahon standartlariga to'la javob beradi<br />
+                                 Наша продукция полностью соответствует государственным и мировым стандартам.<br />
                              </p>
                          </div>
                          <div class="ab-button-box d-flex align-items-center">
                              <div class="tj-theme-btn">
                                  <a class="tj-primary-btn" href="{{route('biz_haqimizda')}}">
-                                     Batafsil tanishish <i class="flaticon-right-1"></i>
+                                     Узнать больше <i class="flaticon-right-1"></i>
                                  </a>
                              </div>
 
@@ -93,14 +89,13 @@
                              </div>
                              <div class="about-number">
                                  <div class="tj-count"><span class="odometer" data-count="985">0</span></div>
-                                 <p class="desc">Bizning hamkorlar</p>
+                                 <p class="desc">Наши партнеры</p>
                              </div>
                          </div>
                          <div class="image-box">
-                             <img class="p-z-idex" src="front_asset/images/about/ab-1.jpg" alt="Image" />
+                             <img class="p-z-idex" src="front_asset/images/car.jpg" alt="Image" /><br>
+                             <img class="p-z-idex" src="front_asset/images/building.jpg" alt="Image" />
                          </div>
-{{--                         <img class="group-1 p-z-idex" src="front_asset/images/about/ab-2.jpg" alt="Image" />--}}
-{{--                         <img class="group-shape" src="front_asset/images/about/ab-shape.png" alt="Image" />--}}
                      </div>
                  </div>
              </div>
@@ -117,22 +112,27 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="tj-section-heading text-center">
-                        <span class="sub-title active-shape"> Mirobidtex</span>
-                        <h2 class="title">Mahsulotlarimiz</h2>
+                        <span class="sub-title active-shape"> Миробидтекстиль</span>
+                        <h2 class="title">Наши продукты</h2>
                     </div>
                 </div>
             </div>
             <div class="row">
                 @foreach ($product as $value)
-                <div class="col-lg-3 col-md-6">
-                    <div class="tj-service-item" data-bg-image="{{asset('storage/'.$value->pro_banner_img)}}">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="package-item">
+                            <div class="overflow-hidden">
+                                <img class="img-fluid" src="{{asset('storage/'.$value->pro_banner_img)}}" alt="">
+                            </div>
 
+                            <div class="text-start p-2">
+
+                                <a style="color: var(--tj-primary-color);" href="{{route('mirobid_product.show', ['mirobid_product'=>$value->id])}}">{{$value->product_name}}</a>
+                                <p style="width: 270px; height: 50px;  overflow: hidden;  text-overflow: ellipsis; font-size: 16px;">{{$value->pro_short_content}}</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="service-content">
-                        <h4><a class="title-link" href="{{route('mirobid_product.show', ['mirobid_product'=>$value->id])}}">{{$value->product_name}}</a></h4>
-                        <p>{{$value->pro_short_content}}</p>
-                    </div>
-                </div>
+
                 @endforeach
             </div>
         </div>
@@ -141,19 +141,17 @@
 
     <!--=========== Cta Section Start =========-->
     <section class="tj-cta-section icon-animate">
-        <div class="cta-inner" data-bg-image="front_asset/images/slider/slider-2.jpg"></div>
+        <div class="cta-inner" data-bg-image="{{asset('front_asset/images/mirobid_truck/105-mega-yangi.png')}}"></div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <div class="cta-content-area">
                         <div class="cta-content">
-                            <div class="cta-icon">
-                                <img style="width: 100px; object-fit: contain;" src="front_asset/images/logo/logotip-removebg-preview.png" alt="">
-                            </div>
                             <div class="cta-text">
-                                <h3 class="title">Bizning maqsadimiz</h3>
-                                <p class="desc">“Mirobid Textile” MChJ “O'ZTEXTILPROM” ASSOSIATSIYA a'zosi hisoblanadi.Kompaniyamiz
-                                    o'zining asosiy faoliyati bilan bir qatorda, mijozlarimiz biz bilan hamkorlik qilishdan katta mamnuniyat bilan foydalanishlarini ta'minlashga asosiy etiborni qaratadi.</p>
+                                <h3 class="title">ООО "Миробид Текстиль"</h3>
+                                <p class="desc">ООО «Mirobid Textile» является членом АССОЦИАЦИИ «УЗТЕКСТИЛПРОМ».Наша компания
+                                    Помимо своей основной деятельности, наши клиенты рады сотрудничеству с нами.
+                                    основное внимание уделяется тому, чтобы им нравилось его использовать.</p>
                             </div>
                         </div>
                     </div>
@@ -163,7 +161,7 @@
                 <div class="col-lg-12 position-relative">
                     <div class="tj-theme-button">
                         <a class="tj-transparent-btn" href="{{route('biz_haqimizda')}}">
-                            Batafsil <i class="flaticon-right-1"></i>
+                            Более <i class="flaticon-right-1"></i>
                         </a>
                     </div>
                 </div>
@@ -171,10 +169,6 @@
         </div>
     </section>
     <!--=========== Cta Section End =========-->
-
-
-
-
     <!--=========== Blog Section Start =========-->
     <section class="tj-blog-section" style="
     position: relative;
@@ -183,8 +177,8 @@
         <div class="container">
             <div class="row">
                 <div class="tj-section-heading text-center">
-                    <span class="sub-title active-shape">  MChJ "Mirobid Textile"</span>
-                    <h2 class="title">Eng so'ngi yangiliklar</h2>
+                    <span class="sub-title active-shape">  ООО "Миробид Текстиль"</span>
+                    <h2 class="title">Последние новости</h2>
                 </div>
             </div>
             <div class="row">
@@ -207,15 +201,15 @@
                                         {{$value->news_short_content}}
                                     </p>
                                 </div>
-                                <div class="blog-button">
-                                    <ul class="list-gap">
-                                        <li>
-                                            <a href="{{route('mirobidtext_news.show', ['mirobidtext_news'=>$value->id])}}">
-                                                Batafsil <i class="fa-regular fa-arrow-right"></i
-                                            ></a>
-                                        </li>
-                                    </ul>
-                                </div>
+{{--                                <div class="blog-button">--}}
+{{--                                    <ul class="list-gap">--}}
+{{--                                        <li>--}}
+{{--                                            <a href="{{route('mirobidtext_news.show', ['mirobidtext_news'=>$value->id])}}">--}}
+{{--                                                Batafsil <i class="fa-regular fa-arrow-right"></i--}}
+{{--                                            ></a>--}}
+{{--                                        </li>--}}
+{{--                                    </ul>--}}
+{{--                                </div>--}}
                             </div>
                         </div>
                     </div>

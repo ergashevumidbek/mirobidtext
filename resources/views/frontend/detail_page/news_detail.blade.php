@@ -1,9 +1,17 @@
 @extends('frontend.layouts.master')
 @section('main_content')
-<section class="bt-5" >
-
-</section>
-
+    <!--========== breadcrumb Start ==============-->
+    <section class="breadcrumb-wrapper" data-bg-image="{{asset('assets/images/slider/slider-1.jpg')}}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-content">
+                        <h1 class="breadcrumb-title text-center">Новости</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
     <!--========== blog details Start ==============-->
     <section class="tj-blog-details my-5">
         <div class="container">
@@ -59,7 +67,7 @@
                     <div class="details-sidebar-inner">
 
                         <div class="tj-sidebar-widget sidebar-post">
-                            <h5 class="details_title">Eng so'ngi yangiliklar</h5>
+                            <h5 class="details_title">Последние новости</h5>
                             @foreach ($latest_new as $values)
                             <div class="tj-post-content">
                                 <div class="tj-auother-img">
@@ -81,51 +89,7 @@
                                 </div>
                             </div>
                             @endforeach
-
-
                         </div>
-                        <div class="tj-sidebar-widget sidebar-catagory">
-                            <h5 class="details_title">Bizning bo'limlar</h5>
-                            <ul class="list-gap">
-                                <li>
-                                    <a href="#"
-                                        >Introductions
-                                        <span> 15</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        >Engineering
-                                        <span> 14</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        >Transport
-                                        <span> 07</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        >Logistics
-                                        <span> 04</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        >Business
-                                        <span> 06</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        >Work Permits
-                                        <span> 08</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-
                     </div>
                 </div>
             </div>

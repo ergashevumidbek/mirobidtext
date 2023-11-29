@@ -12,10 +12,11 @@ use App\Http\Controllers\AuthController;
 
 Route::group(
     [
-//        'prefix' => LaravelLocalization::setLocale(),
-//        'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
+        'prefix' => LaravelLocalization::setLocale(),
+        'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
     ], function(){
     Route::get('/', [PageController::class, 'main_page'])->name('/');
+    Route::get('/translation', [PageController::class, 'translation'])->name('translation');
     Route::get('/yangiliklar', [PageController::class, 'yangiliklar'])->name('yangiliklar');
     Route::get('/biz_haqimizda', [PageController::class,'biz_haqimizda'])->name('biz_haqimizda');
     Route::get('/aloqa', [PageController::class, 'aloqa'])->name('aloqa');
@@ -32,6 +33,7 @@ Route::group(
     Route::get('/vata_prima', [PageController::class, 'vata_prima'])->name('vata_prima');
     Route::get('/supurgilar', [PageController::class, 'supurgilar'])->name('supurgilar');
     Route::get('/doka', [PageController::class, 'doka'])->name('doka');
+    Route::get('/venik', [PageController::class, 'venik'])->name('venik');
 
 });
 // Backend route

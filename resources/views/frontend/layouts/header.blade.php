@@ -7,7 +7,9 @@
                     <!-- Logo Area Start -->
                     <div class="logo-area">
                         <div class="">
-                            <a href="{{route('/')}}"> <img src="{{asset('front_asset/images/logo/mirobod1.jpg')}}" alt="Logo" style="width: 270px; object-fit: contain; margin-left: 0px;" /></a>
+                            <a class=""  href="{{route('/')}}">
+                                <img  style="width: 120px; height: 120px; border-radius: 50%;  "  src="{{asset('front_asset/images/mirobid_logo/logos.jpg')}}" alt="Logo"  />
+                            </a>
                         </div>
                     </div>
                     <!-- Logo Area End -->
@@ -19,42 +21,45 @@
                             <div class="tj-main-menu d-lg-block d-none text-start" id="main-menu">
                                 <ul class="main-menu" id="myDIV">
                                     <li class="current-menu-item">
-                                        <a class="news " href="{{route('/')}}">Bosh sahifa</a>
+                                        <a class="news " href="{{route('/')}}">Главный</a>
                                     </li>
                                     <li class="current-menu-item">
-                                        <a class="news" href="{{route('yangiliklar')}}">Yangiliklar</a>
+                                        <a class="news" href="{{route('yangiliklar')}}">Новости</a>
                                     </li>
                                     <li class=" menu-item-has">
-                                        <a class="news" href="{{route('mahsulotlar')}}">Mahsulotlar</a>
-                                        <ul class="list-gap sub-menu-list">
-                                            <li><a href="{{route('toqilmagan_mato')}}">To'qilmagan mato</a></li>
-                                            <li><a href="{{route('vafli_mato')}}">Vafli mato</a></li>
-                                            <li><a href="{{route('teri_sochiqlar')}}"> Terri sochiqlar</a></li>
-                                            <li><a href="{{route('vata_prima')}}"> Vata prima</a></li>
-                                            <li><a href="{{route('supurgilar')}}"> Supurgilar</a></li>
-                                            <li><a href="{{route('doka')}}"> Doka</a></li>
-                                        </ul>
+                                        <a class="news" href="{{route('mahsulotlar')}}">Продукты</a>
+{{--                                        <ul class="list-gap sub-menu-list">--}}
+{{--                                            <li><a href="{{route('toqilmagan_mato')}}">{{__('msg.pro_1')}}</a></li>--}}
+{{--                                            <li><a href="{{route('vafli_mato')}}">{{__('msg.pro_2')}}</a></li>--}}
+{{--                                            <li><a href="{{route('teri_sochiqlar')}}"> {{__('msg.pro_3')}}</a></li>--}}
+{{--                                            <li><a href="{{route('vata_prima')}}"> {{__('msg.pro_4')}}</a></li>--}}
+{{--                                            <li><a href="{{route('supurgilar')}}"> {{__('msg.pro_5')}}</a></li>--}}
+{{--                                            <li><a href="{{route('doka')}}"> {{__('msg.pro_6')}}</a></li>--}}
+{{--                                        </ul>--}}
                                     </li>
-                                    <li class=" current-menu-item">
-                                        <a class="news" href="{{route('yetkazib_berish')}}"> Xizmatlar </a>
-                                    </li>
+
 
                                     <li>
-                                        <a class="news"> Kompaniya</a>
+                                        <a class="news">
+                                            Компания</a>
                                         <ul class="list-gap sub-menu-list">
 {{--                                            <li><a href="project.html">Galereya</a></li>--}}
-                                            <li><a href="{{route('guvohnoma')}}">Gost</a></li>
-                                            <li><a href="{{route('biz_haqimizda')}}"> Kompaniya haqida</a></li>
+                                            <li><a href="{{route('guvohnoma')}}">Гость</a></li>
+                                            <li><a href="{{route('biz_haqimizda')}}"> О компании</a></li>
+                                            <li><a href="{{route('gallery.create')}}"> Галерея</a></li>
                                         </ul>
                                     </li>
 
-                                    <li><a class="news" href="{{route('aloqa')}}">Kantakt</a></li>
+                                    <li><a class="news" href="{{route('aloqa')}}">Контакт</a></li>
+{{--                                    <li class=" current-menu-item">--}}
+{{--                                        <a class="news" href="{{route('yetkazib_berish')}}">Услуги </a>--}}
+{{--                                    </li>--}}
                                     <li class="menu-item-has">
-                                        <a href="#"><i class="fa fa-globe" aria-hidden="true"></i></a>
-                                        <ul class="list-gap sub-menu-list">
-                                            <li><a href="{{url('/uz')}}"><img src="{{asset('front_asset\images\flaguzb.jpg')}}" alt="" width="30" height="20"> Uzbek</a></li>
-                                            <li><a href="{{url('/ru')}}"><img src="{{asset('front_asset\images\rusia.png')}}" alt="" width="30" height="20"> Rus</a></li>
-                                        </ul>
+                                        <a href="mirobidlogistic.uz">Миробидлогистиc</a>
+{{--                                        <ul class="list-gap sub-menu-list">--}}
+{{--                                            <li><a href="{{url('/ru')}}"><img src="{{asset('front_asset\images\rusia.png')}}" alt="" width="30" height="20"> Rus</a></li>--}}
+{{--                                            <li><a href="{{url('/en')}}"><img src="{{asset('front_asset\images\eng.jpg')}}" alt="" width="30" height="20"> Eng</a></li>--}}
+{{--                                        </ul>--}}
                                     </li>
                                     <li style="font-size: 9px;">
                                         <a class=" text-mute" href="{{route('biz_haqimizda')}}"><i class="fa fa-phone" aria-hidden="true"></i>+998-90-275-0007 </a>

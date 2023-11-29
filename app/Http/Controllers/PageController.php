@@ -13,7 +13,7 @@ class PageController extends Controller
 {
     public function main_page(){
         $latest_news = DB::table('latest_news')->latest()->limit(3)->get();
-        $product = DB::table('mirobid_products')->latest()->limit(3)->get();
+        $product = DB::table('mirobid_products')->latest()->limit(4)->get();
         $slide_data = DB::table('slayder_contents')->latest()->limit(3)->get();
         return view('frontend.main_page')->with([
             'slide_data' => $slide_data,
@@ -33,8 +33,14 @@ class PageController extends Controller
             'staff'=>$staff
         ]);
     }
+    public function venik() {
+        return view('frontend.venik');
+    }
     public function mirobidtex_news(){
         return view('backend.tables.news_tables');
+    }
+    public function translation() {
+        return view('backend.translation.translation');
     }
 //    products all
     public function products(){
@@ -108,7 +114,7 @@ class PageController extends Controller
         return view('frontend.contact');
     }
     public function mahsulotlar(){
-        $product_list = DB::table('mirobid_products')->latest()->limit(6)->get();
+        $product_list = DB::table('mirobid_products')->latest()->limit(8)->get();
 
         return view('frontend.product')->with(['product_list' => $product_list]);
         // malumot ketyapti
